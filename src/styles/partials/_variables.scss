@@ -1,0 +1,72 @@
+// **** Breakpoints ****
+$breakpoint-desktop: 1280px;
+$breakpoint-tablet: 768px;
+
+// **** Typography ****
+// Font
+$brainflix-sitefont: "Avenir-Next";
+
+// **** Font Sizes ****
+// Mobile 
+$font-mobile-pageheader-size: 1.5rem; // 24px
+$font-mobile-pageheader-weight: 700;
+$font-mobile-pageheader-lh: 2rem; // 32px
+
+$font-mobile-sectionheader-size: .75rem; // 12px
+$font-mobile-sectionheader-weight: 700;
+$font-mobile-sectionheader-lh: 1.25rem; // 20px
+
+$font-mobile-subheader-size: .8125rem; // 13px
+$font-mobile-subheader-weight: 700;
+$font-mobile-subheader-lh: 1.125rem; // 18px
+
+$font-mobile-copy-body-size: .8125rem; // 13px
+$font-mobile-copy-body-weight: 400;
+$font-mobile-copy-body-lh: 1.125rem; // 18px
+
+$font-mobile-buttonslabels-size: .75rem; // 12px
+$font-mobile-buttonslabels-weight: 700;
+$font-mobile-buttonslabels-lh: 1.25rem; // 20px
+
+// Desktop
+$font-desktop-pageheader-size: 2.0625rem; // 33px
+$font-desktop-pageheader-weight: 700;
+$font-desktop-pageheader-lh: 2.75rem; // 44px
+
+$font-desktop-sectionheader-size: .75rem; // 12px
+$font-desktop-sectionheader-weight: 700;
+$font-desktop-sectionheader-lh: 1.25rem; // 20px
+
+$font-desktop-subheader-size: .875rem; // 14px
+$font-desktop-subheader-weight: 700;
+$font-desktop-subheader-lh: 1.375rem; // 22px
+
+$font-desktop-copy-body-size: .875rem; // 14px
+$font-desktop-copy-body-weight: 400;
+$font-desktop-copy-body-lh: 1.375rem; // 22px
+
+$font-desktop-buttonslabels-size: .75rem; // 12px
+$font-desktop-buttonslabels-weight: 700;
+$font-desktop-buttonslabels-lh: 1.25rem; // 20px
+
+// **** Site Colours ****
+// Primary
+$BrainFlix-Black: #323232;
+$BrainFlix-Blue: #0095FF;
+$BrainFlix-Silver: #AFAFAF;
+$Brainflix-White: #FFFFFF;
+
+// Secondary
+$BrainFlix-DarkBlack: #000000;
+$BrainFlix-DarkBlue: #0065AD;
+$BrainFlix-Mercury: #E1E1E1;
+$BrainFlix-Alabaster: #FAFAFA;
+
+// **** Margins ****
+$margin-mobile: 1rem; // 16px
+
+$margin-tablet: 1.5rem; // 24px
+$margin-tablet-outer: 2.25rem; // 36px
+
+$margin-desktop: 1.5rem; // 24px
+$margin-desktop-outer: auto;
