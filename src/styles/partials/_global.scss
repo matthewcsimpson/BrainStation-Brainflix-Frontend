@@ -14,8 +14,36 @@
     max-height: 2.25rem;
     border-radius: 50%;
     background-color: $BrainFlix-Mercury;
+
 }
 
 .glbl__button {
+    font-weight: $font-mobile-buttonslabels-weight;
+    font-size: $font-mobile-buttonslabels-size;
+    color: $Brainflix-White;
+    height: 2.5rem;
     background-color: $BrainFlix-Blue;
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image {
+        margin: 0 $margin-mobile;
+    }
+
+    &__spacer {
+        width: 1.5rem;
+        margin: 0 $margin-mobile;
+    }
+
+    &__text {
+        margin: 0 auto;
+    }
+
+    &:hover {
+        background-color: $BrainFlix-DarkBlue;
+    }
 }
