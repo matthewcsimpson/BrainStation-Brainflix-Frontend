@@ -3,3 +3,21 @@
 @use './partials/fontface' as *;
 @use './partials/mixins' as *;
 @use './partials/variables' as *;
+
+.bf__wrapper {
+    margin: $margin-mobile;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        display: block;
+    }
+
+    &__searchbar {
+        display: block;
+    }
+
+}
