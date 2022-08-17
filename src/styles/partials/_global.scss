@@ -91,6 +91,10 @@
         display: block;
         height: 40px;
         width: 80%;
+        padding: 0 calc($margin-mobile*3);
+        background: url('../../assets/images/Icons/search.svg') no-repeat left $margin-mobile center;
+        border-radius: .25rem;
+        border: 1px solid $BrainFlix-Silver;
     }
 
     &__avatar {

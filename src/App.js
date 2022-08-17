@@ -19,6 +19,20 @@ import Hero from "./components/Hero";
  */
 
 function App() {
+  /**
+   * Date formatter.
+   */
+  const dateOptions = { day: "2-digit", month: "2-digit", year: "numeric" };
+  /**
+   * Function to return a formatted date from a timestamp string.
+   * @param {string} timestamp;
+   * @param {Object} dateOptions;
+   */
+  const formatDate = (timestamp, options) => {
+    let date = new Date(timestamp);
+    return date.toLocaleDateString("en-us", options);
+  };
+
   return (
     <div className="bf__wrapper">
       <Header userimg={userimg} bflogo={bflogo} upld={upld} />
@@ -34,7 +48,9 @@ function App() {
           <div className="details__stats">
             <div className="details__authordate">
               <p className="details__text">{videoDetails[0].channel}</p>
-              <p className="details__text">{videoDetails[0].timestamp}</p>
+              <p className="details__text">
+                {formatDate(videoDetails[0].timestamp, dateOptions)}
+              </p>
             </div>
             <div className="details__viewslikes">
               <p className="details__text">{videoDetails[0].views}</p>
