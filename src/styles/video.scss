@@ -4,9 +4,9 @@
 @use './partials/mixins' as *;
 @use './partials/variables' as *;
 
-.bf__wrapper {
-    margin: $margin-mobile;
-}
+
+
+// ------------------------------ Header Section
 
 .header {
     width: 100%;
@@ -43,5 +43,16 @@
 
     &__button {
         margin-top: $margin-mobile;
+    }
+}
+
+// ------------------------------ Hero Section
+
+.hero {
+    width: 100%;
+    margin: $margin-mobile 0;
+
+    &__video {
+        width: 100%;
     }
 }
