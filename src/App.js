@@ -25,14 +25,28 @@ function App() {
       <Hero video={videoDetails[0].video} poster={videoDetails[0].image} />
       {/* WORKING ON NOW */}
 
-      {/* TO BE WORKED ON */}
       <section className="details">
-        <div className="details__title-likes">
-          
+        <div className="details__top">
+          <div className="details__title">
+            {/* eslint-disable jsx-a11y/heading-has-content */}
+            <h2 className="details__videotitle">{videoDetails[0].title}</h2>
+          </div>
+          <div className="details__stats">
+            <div className="details__authordate">
+              <p className="details__text">{videoDetails[0].channel}</p>
+              <p className="details__text">{videoDetails[0].timestamp}</p>
+            </div>
+            <div className="details__viewslikes">
+              <p className="details__text">{videoDetails[0].views}</p>
+              <p className="details__text">{videoDetails[0].likes}</p>
+            </div>
+          </div>
         </div>
         <div className="details__synopsis"></div>
         <div className="details__comments"></div>
       </section>
+
+      {/* TO BE WORKED ON */}
 
       <div className="nextvideos"></div>
     </div>

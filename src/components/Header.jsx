@@ -3,7 +3,9 @@ import Button from "./Button";
 function Header(props) {
   return (
     <header className="header">
-      <img src={props.bflogo} alt="BrainFlix" className="header__logo" />
+      <h1>
+        <img src={props.bflogo} alt="BrainFlix" className="header__logo" />
+      </h1>
       <div className="header__right">
         <input
           type="search"
