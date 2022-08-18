@@ -13,7 +13,6 @@
 // ------------------------------ Global Styles
 
 .bf__wrapper {
-    margin: $margin-mobile;
     font-family: $brainflix-sitefont;
 }
 
@@ -69,6 +68,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: $margin-mobile;
+
 
     &__right {
         width: 100%;

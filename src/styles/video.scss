@@ -4,10 +4,6 @@
 @use './partials/mixins' as *;
 @use './partials/variables' as *;
 
-
-
-
-
 // ------------------------------ Hero Section
 
 .hero {
@@ -21,7 +17,7 @@
 
 .details {
     width: 100%;
-    margin: $margin-mobile 0;
+    padding: 0 $margin-mobile;
 
     &__top {
         // wrapper for title & stats
@@ -41,19 +37,36 @@
 
     &__stats {
         border-bottom: 1px solid $BrainFlix-Mercury;
-        padding: $margin-mobile 0;
+        padding: $margin-mobile $margin-mobile $margin-mobile 0;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    &__details {
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     &__text {
         font-size: $font-mobile-copy-body-size;
         font-weight: $font-mobile-copy-body-weight;
+        color: $BrainFlix-Silver;
+
+        &--name {
+            color: $BrainFlix-Black;
+        }
+
+        &--icon {
+            padding: 0 calc($margin-mobile/2);
+        }
     }
 
-    &__synopsis {}
+    // &__synopsis {}
 
-    &__comments {}
+    // &__comments {}
 
 }
