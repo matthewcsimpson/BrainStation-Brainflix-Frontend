@@ -1,19 +1,6 @@
-// **** Imports ****
-@use './partials/global' as *;
-@use './partials/fontface' as *;
-@use './partials/mixins' as *;
-@use './partials/variables' as *;
-
-// ------------------------------ Hero Section
-
-.hero {
-    width: 100%;
-    margin: $margin-mobile 0;
-
-    &__video {
-        width: 100%;
-    }
-}
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fontface' as *;
+@use '../../styles/partials/mixins' as *;
 
 .details {
     width: 100%;
@@ -80,8 +67,4 @@
 
     // &__comments {}
 
-}
-
-.comments {
-    padding: 0 $margin-mobile;
 }

@@ -12,13 +12,7 @@ import { useState } from "react";
 
 // Components
 import Header from "./components/Header/Header";
-import CurrentVideo from "./components/CurrentVideo";
-/**
- * reminder: to build string to access video
- * const API_KEY = "?api_key=bd6be8d0-bde7-4b66-848d-bccaa5394a3a";
- * const videoString = `${videoDetails[0].video}${API_KEY}`;
- * <Hero video={videoString} poster={videoDetails[0].image} />
- */
+import CurrentVideo from "./components/CurrentVideo/CurrentVideo";
 
 function App() {
   const [selectedVideo] = useState(videoDetails[0]);
@@ -31,7 +25,13 @@ function App() {
 
       {/* -------------------------------- WORKING ON NOW */}
 
-      <div className="details__comments"></div>
+      <div className="comments">
+        <form className="comments__form">
+          <div className="glbl__user-avatar"></div>
+          <div></div>
+          <div></div>
+        </form>
+      </div>
 
       {/* -------------------------------- TO BE WORKED ON */}
 
