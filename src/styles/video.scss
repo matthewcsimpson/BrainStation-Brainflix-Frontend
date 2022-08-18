@@ -56,13 +56,22 @@
         font-weight: $font-mobile-copy-body-weight;
         color: $BrainFlix-Silver;
 
-        &--name {
+        &--title {
             color: $BrainFlix-Black;
+            font-weight: bold;
         }
 
         &--icon {
             padding: 0 calc($margin-mobile/2);
         }
+
+        &--body {
+            color: $BrainFlix-Black;
+        }
+    }
+
+    &__synopsis {
+        padding: $margin-mobile 0;
     }
 
     // &__synopsis {}

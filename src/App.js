@@ -7,9 +7,10 @@ import viewsimg from "./assets/images/Icons/views.svg";
 
 // DATA
 // import videoList from "./data/videos.json";
-import videoDetails from "./data/video-details.json";
+import videoDetails from "./data/video-details-enhanced.json";
 
 // Not Temp
+import { useState } from "react";
 import Header from "./components/Header";
 import CurrentVideo from "./components/CurrentVideo";
 /**
@@ -20,10 +21,14 @@ import CurrentVideo from "./components/CurrentVideo";
  */
 
 function App() {
+  const [selectedVideo] = useState(videoDetails[0]);
+  // setSelectedVideo
+
   /**
-   * Date formatter.
+   * Date formatting options.
    */
   const dateOptions = { day: "2-digit", month: "2-digit", year: "numeric" };
+
   /**
    * Function to return a formatted date from a timestamp string.
    * @param {string} timestamp;
@@ -37,23 +42,23 @@ function App() {
   return (
     <div className="bf__wrapper">
       <Header userimg={userimg} bflogo={bflogo} upld={upld} />
-      <CurrentVideo videoDetails={videoDetails[0]} />
-      
+      <CurrentVideo videoDetails={selectedVideo} />
+
       {/* WORKING ON NOW */}
 
       <section className="details">
         <div className="details__top">
           <div className="details__title">
             {/* eslint-disable jsx-a11y/heading-has-content */}
-            <h2 className="details__videotitle">{videoDetails[0].title}</h2>
+            <h2 className="details__videotitle">{selectedVideo.title}</h2>
           </div>
           <div className="details__stats">
             <div className="details__details">
-              <p className="details__text details__text--name">
-                {videoDetails[0].channel}
+              <p className="details__text details__text--title">
+                {selectedVideo.channel}
               </p>
               <p className="details__text">
-                {formatDate(videoDetails[0].timestamp, dateOptions)}
+                {formatDate(selectedVideo.timestamp, dateOptions)}
               </p>
             </div>
             <div className="details__details">
@@ -63,7 +68,7 @@ function App() {
                   src={viewsimg}
                   alt="views"
                 />
-                {videoDetails[0].views}
+                {selectedVideo.views}
               </p>
               <p className="details__text">
                 <img
@@ -71,12 +76,19 @@ function App() {
                   src={likesimg}
                   alt="likes"
                 />
-                {videoDetails[0].likes}
+                {selectedVideo.likes}
               </p>
             </div>
           </div>
         </div>
-        <div className="details__synopsis"></div>
+        <div className="details__synopsis">
+          <p className="details__text details__text--body">
+            {selectedVideo.description}
+          </p>
+          <p className="details__text details__text--title">
+            {selectedVideo.comments.length} Comments
+          </p>
+        </div>
         <div className="details__comments"></div>
       </section>
 
