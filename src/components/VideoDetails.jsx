@@ -1,5 +1,5 @@
-import { formatDate } from "../styles/utilities/utilityFunctions";
-import { dateOptions } from "../styles/utilities/utilityFunctions";
+import { formatDate } from "../utilities/utilityFunctions";
+import { dateOptions } from "../utilities/utilityFunctions";
 
 import likesimg from "../assets/images/Icons/likes.svg";
 import viewsimg from "../assets/images/Icons/views.svg";

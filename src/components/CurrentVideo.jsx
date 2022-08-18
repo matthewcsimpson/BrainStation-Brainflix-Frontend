@@ -2,7 +2,6 @@ import Hero from "./Hero";
 import VideoDetails from "./VideoDetails";
 
 function CurrentVideo(props) {
-  console.log(props);
   return (
     <>
       <Hero

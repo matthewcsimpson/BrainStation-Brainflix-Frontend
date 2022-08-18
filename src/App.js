@@ -7,9 +7,11 @@ import upld from "./assets/images/Icons/upload.svg";
 // import videoList from "./data/videos.json";
 import videoDetails from "./data/video-details-enhanced.json";
 
-// Not Temp
+// Libraries
 import { useState } from "react";
-import Header from "./components/Header";
+
+// Components
+import Header from "./components/Header/Header";
 import CurrentVideo from "./components/CurrentVideo";
 /**
  * reminder: to build string to access video
@@ -27,7 +29,6 @@ function App() {
       <Header userimg={userimg} bflogo={bflogo} upld={upld} />
       <CurrentVideo videoDetails={selectedVideo} />
 
-      
       {/* -------------------------------- WORKING ON NOW */}
 
       <div className="details__comments"></div>

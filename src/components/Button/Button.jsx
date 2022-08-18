@@ -1,3 +1,5 @@
+import "./Button.scss";
+
 function Button(props) {
   return (
     <button className="glbl__button header__button">

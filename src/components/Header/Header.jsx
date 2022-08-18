@@ -1,4 +1,5 @@
-import Button from "./Button";
+import Button from "../Button/Button";
+import "./Header.scss";
 
 function Header(props) {
   return (

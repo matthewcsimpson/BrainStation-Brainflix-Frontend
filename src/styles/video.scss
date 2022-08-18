@@ -25,7 +25,7 @@
     }
 
     &__title {
-        border-bottom: 1px solid $BrainFlix-Mercury;
+        border-bottom: 1px solid $BrainFlix-SecondarySilver;
         padding-bottom: $margin-mobile;
     }
 
@@ -36,7 +36,7 @@
     }
 
     &__stats {
-        border-bottom: 1px solid $BrainFlix-Mercury;
+        border-bottom: 1px solid $BrainFlix-SecondarySilver;
         padding: $margin-mobile $margin-mobile $margin-mobile 0;
         display: flex;
         flex-direction: row;
@@ -54,10 +54,10 @@
     &__text {
         font-size: $font-mobile-copy-body-size;
         font-weight: $font-mobile-copy-body-weight;
-        color: $BrainFlix-Silver;
+        color: $BrainFlix-PrimarySilver;
 
         &--title {
-            color: $BrainFlix-Black;
+            color: $BrainFlix-PrimaryBlack;
             font-weight: bold;
         }
 
@@ -66,7 +66,7 @@
         }
 
         &--body {
-            color: $BrainFlix-Black;
+            color: $BrainFlix-PrimaryBlack;
             margin-bottom: $margin-mobile;
         }
     }
