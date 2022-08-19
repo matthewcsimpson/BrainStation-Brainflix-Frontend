@@ -76,6 +76,9 @@ function App() {
             />
           </div>
         </form>
+        <div className="comments__list">
+          
+        </div>
       </div>
 
       {/* -------------------------------- TO BE WORKED ON */}

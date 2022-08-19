@@ -1,0 +1,13 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fontface' as *;
+@use '../../styles/partials/mixins' as *;
+
+.glbl__user-avatar {
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    max-width: 2.25rem;
+    max-height: 2.25rem;
+    border-radius: 50%;
+    background-color: $BrainFlix-SecondarySilver;
+
+}

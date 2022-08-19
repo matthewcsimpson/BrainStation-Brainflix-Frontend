@@ -1,11 +1,12 @@
 import Button from "../Button/Button";
+import Avatar from "../Avatar/Avatar";
 import "./Header.scss";
 
-function Header(props) {
+function Header({ bflogo, userimg, upld }) {
   return (
     <header className="header">
       <h1>
-        <img src={props.bflogo} alt="BrainFlix" className="header__logo" />
+        <img src={bflogo} alt="BrainFlix" className="header__logo" />
       </h1>
       <form className="header__right">
         <input
@@ -13,16 +14,10 @@ function Header(props) {
           placeholder="Search..."
           className="header__searchbar"
         ></input>
-        <div className="glbl__user-avatar header__avatar">
-          <img
-            className="glbl__user-avatar"
-            alt="User Img"
-            src={props.userimg}
-          ></img>
-        </div>
+        <Avatar userimg={userimg} classModifier="header__avatar" />
         <Button
           buttonName="Upload"
-          icon={props.upld}
+          icon={upld}
           classModifier="header__button"
         />
       </form>
