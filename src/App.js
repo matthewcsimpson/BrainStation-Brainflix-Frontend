@@ -38,7 +38,7 @@ function App() {
 
       <div className="comments">
         <form className="comments__form">
-          <div>
+          <div className="comments__avatar-wrapper">
             <label
               htmlFor="avatar"
               className="comments__label comments__label--hidden"
@@ -76,9 +76,7 @@ function App() {
             />
           </div>
         </form>
-        <div className="comments__list">
-          
-        </div>
+        <div className="comments__list"></div>
       </div>
 
       {/* -------------------------------- TO BE WORKED ON */}
