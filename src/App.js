@@ -36,7 +36,13 @@ function App() {
             >
               Avatar
             </label>
-            <div name="avatar" className="glbl__user-avatar"></div>
+            <div name="avatar" className="glbl__user-avatar">
+              <img
+                className="glbl__user-avatar"
+                alt="User Img"
+                src={userimg}
+              ></img>
+            </div>
           </div>
           <div className="comments__form-input">
             <label for="new_comment" class="comments__label">

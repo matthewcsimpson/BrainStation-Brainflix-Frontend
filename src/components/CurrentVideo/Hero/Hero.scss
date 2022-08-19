@@ -1,0 +1,12 @@
+@use '../../../styles/partials/fontface' as *;
+@use '../../../styles/partials/mixins' as *;
+@use '../../../styles/partials/variables' as *;
+
+.hero {
+    width: 100%;
+    margin: $margin-mobile 0;
+
+    &__video {
+        width: 100%;
+    }
+}
