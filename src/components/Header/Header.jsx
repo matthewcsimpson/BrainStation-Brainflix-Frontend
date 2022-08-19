@@ -7,7 +7,7 @@ function Header(props) {
       <h1>
         <img src={props.bflogo} alt="BrainFlix" className="header__logo" />
       </h1>
-      <div className="header__right">
+      <form className="header__right">
         <input
           type="search"
           placeholder="Search..."
@@ -25,7 +25,7 @@ function Header(props) {
           icon={props.upld}
           classModifier="header__button"
         />
-      </div>
+      </form>
     </header>
   );
 }

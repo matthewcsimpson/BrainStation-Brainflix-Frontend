@@ -17,8 +17,17 @@ import CurrentVideo from "./components/CurrentVideo/CurrentVideo";
 import Button from "./components/Button/Button";
 
 function App() {
-  const [selectedVideo] = useState(videoDetails[0]);
-  // setSelectedVideo
+  const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
+
+  /**
+   * Function to handle setting the selected video.
+   * Takes an incoming video ID and uses it to search for a specific video.
+   * @param {string} selectedID
+   */
+  // eslint-disable-next-line no-unused-vars
+  const handleVideoSelection = (selectedID) => {
+    setSelectedVideo(videoDetails.find((video) => video.id === selectedID));
+  };
 
   return (
     <div className="bf__wrapper">
@@ -31,7 +40,7 @@ function App() {
         <form className="comments__form">
           <div>
             <label
-              for="avatar"
+              htmlFor="avatar"
               className="comments__label comments__label--hidden"
             >
               Avatar
@@ -45,16 +54,16 @@ function App() {
             </div>
           </div>
           <div className="comments__form-input">
-            <label for="new_comment" class="comments__label">
+            <label htmlFor="new_comment" className="comments__label">
               Join the conversation
             </label>
             <input
               type="text"
               placeholder="Add a new comment..."
-              class="comments__textarea"
+              className="comments__textarea"
             />
             <label
-              for="commentsubmit"
+              htmlFor="commentsubmit"
               className="comments__label comments__label--hidden"
             >
               Comment
