@@ -1,10 +1,10 @@
 import "./Button.scss";
 
-function Button(props) {
+function Button({ icon, buttonName, classModifier }) {
   return (
-    <button className="glbl__button header__button" type="submit">
-      <img className="glbl__button__image" src={props.icon} alt="" />
-      <span className="glbl__button__text">{props.buttonName}</span>
+    <button className={`glbl__button ${classModifier}`} type="submit">
+      <img className="glbl__button__image" src={icon} alt="" />
+      <span className="glbl__button__text">{buttonName}</span>
       <span className="glbl__button__spacer"></span>
     </button>
   );

@@ -20,7 +20,11 @@ function Header(props) {
             src={props.userimg}
           ></img>
         </div>
-        <Button buttonName="Upload" icon={props.upld} />
+        <Button
+          buttonName="Upload"
+          icon={props.upld}
+          classModifier="header__button"
+        />
       </div>
     </header>
   );

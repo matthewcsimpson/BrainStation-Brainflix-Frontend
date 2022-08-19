@@ -36,6 +36,10 @@
         background: url('../../assets/images/Icons/search.svg') no-repeat left $margin-mobile center;
         border-radius: .25rem;
         border: 1px solid $BrainFlix-PrimarySilver;
+
+        &:active {
+            border: 1px solid $BrainFlix-PrimaryBlue;
+        }
     }
 
     &__avatar {

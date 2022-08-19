@@ -7,7 +7,9 @@ function CurrentVideo({ videoDetails }) {
   return (
     <>
       <Hero video={videoDetails.video} poster={videoDetails.image} />
-      <VideoDetails selectedVideo={videoDetails} />
+      <section className="details">
+        <VideoDetails selectedVideo={videoDetails} />
+      </section>
     </>
   );
 }

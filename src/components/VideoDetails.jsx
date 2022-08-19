@@ -6,7 +6,8 @@ import viewsimg from "../assets/images/Icons/views.svg";
 
 function VideoDetails({ selectedVideo }) {
   return (
-    <section className="details">
+    <>
+      {" "}
       <div className="details__top">
         <div className="details__title">
           {/* eslint-disable jsx-a11y/heading-has-content */}
@@ -41,7 +42,7 @@ function VideoDetails({ selectedVideo }) {
           {selectedVideo.comments.length} Comments
         </p>
       </div>
-    </section>
+    </>
   );
 }
 
