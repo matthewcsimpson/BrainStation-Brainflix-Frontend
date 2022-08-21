@@ -14,7 +14,11 @@
         flex-direction: row;
         justify-content: space-between;
         padding: $margin-tablet $margin-tablet 0 $margin-tablet;
+    }
 
+    @include desktop {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     &__right {
@@ -28,6 +32,7 @@
         @include tablet {
             flex-wrap: nowrap;
             width: 60%;
+            justify-content: flex-end;
         }
     }
 
@@ -66,9 +71,9 @@
 
         @include tablet {
             margin-top: 0px;
-
             order: 2;
         }
+
     }
 
     &__button {
@@ -76,8 +81,11 @@
 
         @include tablet {
             margin-top: 0px;
-
             order: 1;
+        }
+
+        @include desktop {
+            margin-right: $margin-desktop;
         }
     }
 }

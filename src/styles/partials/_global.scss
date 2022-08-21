@@ -4,17 +4,13 @@
 
 // ------------------------------ Reset
 
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-// ------------------------------ Global Styles
-
-.bf__wrapper {
     font-family: $brainflix-sitefont;
+    font-size: 100%;
+    font-weight: normal;
 }
 
-// ------------------------------ Header Section
+

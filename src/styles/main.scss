@@ -1,0 +1,25 @@
+// **** Imports ****
+@use './partials/global' as *;
+@use './partials/fontface' as *;
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+
+.bf__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.bf__flexwrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+// .bf__subwrapper {}

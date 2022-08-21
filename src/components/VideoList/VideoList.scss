@@ -9,7 +9,7 @@
         padding: 0 $margin-desktop;
     }
 
-
+    @include desktop {}
 
     &__heading {
         font-size: $font-mobile-subheader-size;
@@ -23,7 +23,10 @@
             font-weight: $font-desktop-buttonslabels-weight;
             color: $BrainFlix-PrimarySilver;
             padding-top: $margin-desktop;
+        }
 
+        @include desktop {
+            padding-top: 0px;
         }
 
         &--hidden {
@@ -45,6 +48,10 @@
         @include tablet {
             max-width: 70%;
         }
+
+        @include desktop {
+            max-width: 100%;
+        }
     }
 
     &__thumbnail {
@@ -55,8 +62,6 @@
         object-fit: cover;
         border-radius: .25rem;
         margin-right: $margin-mobile;
-
-
 
     }
 

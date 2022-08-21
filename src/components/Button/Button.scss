@@ -25,6 +25,10 @@
         margin: 0 $margin-mobile;
     }
 
+    @include desktop {
+        margin: 0 0 0 $margin-desktop;
+    }
+
     &__image {
         margin: 0 $margin-mobile;
     }
