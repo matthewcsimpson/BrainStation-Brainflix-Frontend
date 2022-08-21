@@ -22,18 +22,18 @@ To submit this deliverable, ensure you merge your develop branch with the main b
 
 ### Implementation Requirements
 
-- Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 1 Folder Structure Diagram.
-- The site must make use of the provided assets.
-- The site must be composed of multiple React components.
-- The site must use the <video> tag for the video player.
-- Although the <video> tag will not be functional for this sprint, all visual elements of the video player must exist on the deliverable without functionality.
+- ✅ Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 1 Folder Structure Diagram.
+- ✅ The site must make use of the provided assets.
+- ✅ The site must be composed of multiple React components.
+- ✅ The site must use the <video> tag for the video player.
+- ✅ Although the <video> tag will not be functional for this sprint, all visual elements of the video player must exist on the deliverable without functionality.
 - Use the poster attribute to have the video player resemble the mockup.
 - Video controls should be the default <video> controls. Don’t worry if the default styling doesn’t match the mockups, re-styling them will be part of the later sprint.
 - Using both of the data files provided from the assets, you must use state to hold the data and pass it down as props to generate side-videos and main-video content including comments.
-- The data files provided are meant to mimic a REST API response, where one endpoint will return a small amount of data for each video that exists, the second endpoint will return all the data for one specific video. Think about how you may use the data files provided to achieve this within your project.
+- ✅ The data files provided are meant to mimic a REST API response, where one endpoint will return a small amount of data for each video that exists, the second endpoint will return all the data for one specific video. Think about how you may use the data files provided to achieve this within your project.
 - The main-video should be included in the side-videos array held in state (with the same object keys as other side-video objects) and filtered out of the side-videos section programmatically when rendering the component.
-- The main-video object, with extended properties, should be held in a separate portion of state
-- The comments-section form doesn’t need to be functional. You don’t need to be able to post new comments for this Sprint, but the comments still need to be rendered dynamically (data coming from comments property of the main-video object stored in state).
-- You must use SASS for your styling and take advantage of SASS variables, plus any other SASS features that can help improve your code.
-- Class naming for your styling must use BEM.
-- Layout of the site must use Flexbox.
+- ✅ The main-video object, with extended properties, should be held in a separate portion of state
+- ✅ The comments-section form doesn’t need to be functional. You don’t need to be able to post new comments for this Sprint, but the comments still need to be rendered dynamically (data coming from comments property of the main-video object stored in state).
+- ✅ You must use SASS for your styling and take advantage of SASS variables, plus any other SASS features that can help improve your code.
+- ✅ Class naming for your styling must use BEM.
+- ✅ Layout of the site must use Flexbox.

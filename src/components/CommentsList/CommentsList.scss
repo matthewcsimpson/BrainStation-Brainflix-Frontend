@@ -28,7 +28,6 @@
     &__comment-body {
         //intentionally named class
         border: 1px solid green;
-
         padding: 0 $margin-mobile;
         display: flex;
         flex-direction: column;
@@ -69,8 +68,9 @@
         color: $BrainFlix-PrimarySilver;
 
         &--title {
+            font-size: $font-mobile-subheader-size;
+            font-weight: $font-mobile-subheader-weight;
             color: $BrainFlix-PrimaryBlack;
-            font-weight: bold;
         }
 
         &--icon {

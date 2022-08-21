@@ -6,6 +6,7 @@ import upld from "./assets/images/Icons/upload.svg";
 // DATA
 // import videoList from "./data/videos.json";
 import videoDetails from "./data/video-details-enhanced.json";
+import videos from "./data/videos.json";
 
 // Libraries
 import { useState } from "react";
@@ -14,9 +15,12 @@ import { useState } from "react";
 import Header from "./components/Header/Header";
 import CurrentVideo from "./components/CurrentVideo/CurrentVideo";
 import CommentsList from "./components/CommentsList/CommentsList";
+import VideoList from "./components/VideoList/VideoList";
 
 function App() {
   const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
+  // eslint-disable-next-line no-unused-vars
+  const [videoArray] = useState(videos);
 
   /**
    * Function to handle setting the selected video.
@@ -31,15 +35,14 @@ function App() {
   return (
     <div className="bf__wrapper">
       <Header userimg={userimg} bflogo={bflogo} upld={upld} />
-      <CurrentVideo videoDetails={selectedVideo} />
-
-      <CommentsList selectedVideo={selectedVideo} />
-
+      <div className="details__flexwrapper">
+        <CurrentVideo videoDetails={selectedVideo} />
+        <CommentsList selectedVideo={selectedVideo} />
+      </div>
+      <VideoList videoArray={videos} />
       {/* -------------------------------- WORKING ON NOW */}
 
       {/* -------------------------------- TO BE WORKED ON */}
-
-      <div className="nextvideos"></div>
     </div>
   );
 }

@@ -1,0 +1,57 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/fontface' as *;
+@use '../../styles/partials/mixins' as *;
+
+.videoslist {
+    padding: 0 $margin-mobile;
+
+    &__heading {
+        font-size: $font-mobile-buttonslabels-size;
+        font-weight: $font-desktop-buttonslabels-weight;
+        color: $BrainFlix-PrimarySilver;
+        text-transform: uppercase;
+        padding-top: $margin-mobile;
+
+        &--hidden {
+            visibility: hidden;
+        }
+
+        &--name {
+            color: $BrainFlix-PrimaryBlack;
+            text-transform: capitalize;
+        }
+    }
+
+    &__video {
+        display: flex;
+        padding: $margin-mobile 0;
+    }
+
+    &__thumbnail {
+        display: block;
+        min-width: 6rem;
+        max-width: 6rem;
+        min-height: 4rem;
+        max-height: 4rem;
+        object-fit: cover;
+        border-radius: .25rem;
+        margin-right: $margin-mobile;
+
+    }
+
+    &__details {
+        padding-left: $margin-mobile;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__videotitle {
+        font-size: $font-mobile-copy-body-size;
+    }
+
+    &__videochannel {
+        font-size: $font-mobile-copy-body-size;
+        font-weight: $font-mobile-copy-body-weight;
+    }
+}
