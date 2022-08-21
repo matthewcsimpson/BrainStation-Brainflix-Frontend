@@ -5,12 +5,26 @@
 .videoslist {
     padding: 0 $margin-mobile;
 
+    @include tablet {
+        padding: 0 $margin-desktop;
+    }
+
+
+
     &__heading {
-        font-size: $font-mobile-buttonslabels-size;
-        font-weight: $font-desktop-buttonslabels-weight;
+        font-size: $font-mobile-subheader-size;
+        font-weight: $font-desktop-subheader-weight;
         color: $BrainFlix-PrimarySilver;
         text-transform: uppercase;
         padding-top: $margin-mobile;
+
+        @include tablet {
+            font-size: $font-desktop-subheader-size;
+            font-weight: $font-desktop-buttonslabels-weight;
+            color: $BrainFlix-PrimarySilver;
+            padding-top: $margin-desktop;
+
+        }
 
         &--hidden {
             visibility: hidden;
@@ -23,18 +37,26 @@
     }
 
     &__video {
+        border: 1px solid fuchsia;
         display: flex;
         padding: $margin-mobile 0;
+        width: 100%;
+
+        @include tablet {
+            max-width: 70%;
+        }
     }
 
     &__thumbnail {
         display: block;
-        min-width: 35%;
-        max-width: 35%;
+        min-width: 30%;
+        max-width: 30%;
         aspect-ratio: 16/10;
         object-fit: cover;
         border-radius: .25rem;
         margin-right: $margin-mobile;
+
+
 
     }
 
@@ -43,15 +65,31 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include tablet {
+            padding-left: $margin-desktop;
+            max-width: 40%;
+        }
     }
 
     &__videotitle {
         font-size: $font-mobile-subheader-size;
         font-weight: $font-mobile-subheader-weight;
+
+        @include tablet {
+            font-size: $font-desktop-subheader-size;
+            font-weight: $font-desktop-subheader-weight;
+        }
     }
 
     &__videochannel {
         font-size: $font-mobile-copy-body-size;
         font-weight: $font-mobile-copy-body-weight;
+
+        @include tablet {
+            font-size: $font-desktop-copy-body-size;
+            font-weight: $font-desktop-copy-body-weight;
+
+        }
     }
 }

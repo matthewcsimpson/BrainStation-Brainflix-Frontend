@@ -1,7 +1,7 @@
 function Video({ vid, handleVideoSelection }) {
   return (
     <div
-      className={`videoslist__video ${vid.id}`}
+      className={`videoslist__video vid-${vid.id}`}
       onClick={() => handleVideoSelection(vid.id)}
     >
       <img src={vid.image} className="videoslist__thumbnail" alt={vid.title} />

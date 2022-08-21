@@ -5,18 +5,35 @@
 .comments {
     padding: 0 $margin-mobile;
 
+    @include tablet {
+        padding: 0 $margin-tablet;
+    }
+
     &__form {
         display: flex;
         flex-direction: row;
         border-bottom: 1px solid $BrainFlix-SecondarySilver;
         padding-bottom: $margin-mobile;
+
+        @include tablet {
+            justify-content: space-between;
+            padding-bottom: $margin-tablet;
+
+        }
     }
 
     &__form-input {
         //intentionally named class
-        border: 1px solid green;
-
+        width: 100%;
         padding: 0 $margin-mobile;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            padding: 0 $margin-tablet;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__comment {
@@ -27,15 +44,22 @@
 
     &__comment-body {
         //intentionally named class
-        border: 1px solid green;
         padding: 0 $margin-mobile;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
+        @include tablet {
+            padding: 0 $margin-tablet;
+        }
     }
 
     &__detailswrapper {
         padding: $margin-mobile 0;
+
+        @include tablet {
+            padding: $margin-tablet 0;
+        }
     }
 
     &__label {
@@ -43,6 +67,10 @@
         font-weight: $font-desktop-buttonslabels-weight;
         color: $BrainFlix-PrimarySilver;
         text-transform: uppercase;
+
+        @include tablet {
+            font-size: $font-desktop-buttonslabels-size;
+        }
 
         &--hidden {
             visibility: hidden;
@@ -58,8 +86,15 @@
         width: 100%;
         height: 6rem;
         border-radius: 4px;
-        padding: $margin-mobile;
+        padding: 0 $margin-mobile;
         border: 1px solid $BrainFlix-PrimarySilver;
+
+        @include tablet {
+            height: 2.5rem;
+            min-width: 30rem;
+            padding: 0 $margin-mobile;
+
+        }
     }
 
     &__text {
@@ -67,10 +102,20 @@
         font-weight: $font-mobile-copy-body-weight;
         color: $BrainFlix-PrimarySilver;
 
+        @include tablet {
+            font-size: $font-desktop-copy-body-size;
+            font-weight: $font-desktop-copy-body-weight;
+        }
+
         &--title {
             font-size: $font-mobile-subheader-size;
             font-weight: $font-mobile-subheader-weight;
             color: $BrainFlix-PrimaryBlack;
+
+            @include tablet {
+                font-size: $font-desktop-subheader-size;
+                font-weight: $font-desktop-subheader-weight;
+            }
         }
 
         &--icon {
@@ -80,6 +125,10 @@
         &--body {
             color: $BrainFlix-PrimaryBlack;
             margin-bottom: $margin-mobile;
+
+            @include tablet {
+                margin-bottom: $margin-desktop;
+            }
         }
     }
 
@@ -89,15 +138,12 @@
     }
 
     &__avatar-wrapper {
-        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
 
         &--comment {
             padding-top: $margin-mobile;
             padding-right: .75rem;
-            ;
         }
     }
-
-
-
 }
