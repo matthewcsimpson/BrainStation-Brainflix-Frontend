@@ -27,6 +27,7 @@ To submit this deliverable, ensure you merge your develop branch with the main b
 - ✅ The site must be composed of multiple React components.
 - ✅ The site must use the <video> tag for the video player.
 - ✅ Although the <video> tag will not be functional for this sprint, all visual elements of the video player must exist on the deliverable without functionality.
+  - ➡API data is in place for video playback to function, and commented out.
 - ✅ Use the poster attribute to have the video player resemble the mockup.
 - ✅ Video controls should be the default <video> controls. Don’t worry if the default styling doesn’t match the mockups, re-styling them will be part of the later sprint.
 - ✅ Using both of the data files provided from the assets, you must use state to hold the data and pass it down as props to generate side-videos and main-video content including comments.
