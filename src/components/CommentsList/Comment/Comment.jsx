@@ -5,7 +5,7 @@ import "../CommentsList.scss";
 import Avatar from "../../Avatar/Avatar";
 
 //utilities
-import { formatDate } from "../../../utilities/utilityFunctions";
+import { readableDate } from "../../../utilities/utilityFunctions";
 
 function Comment({ comment }) {
   return (
@@ -18,7 +18,7 @@ function Comment({ comment }) {
           <p className="comments__label comments__label--name">
             {comment.name}
           </p>
-          <p className="comments__label">{formatDate(comment.timestamp)}</p>
+          <p className="comments__label">{readableDate(comment.timestamp)}</p>
         </div>
         <p className="comments__text comments__text--body">{comment.comment}</p>
       </div>

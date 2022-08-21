@@ -40,4 +40,7 @@ To submit this deliverable, ensure you merge your develop branch with the main b
 
 ### Diving Deeper Dynamic Timestamp
 
-- To add a more refined feel to the site, let's update the timestamp in the comments section and video details to reflect when it was posted in a more human-readable format. Using YouTube as an example, a recently posted comment might display the time posted as "10 minutes ago" or "3 days ago". Apply this type of timestamp to your data without hardcoding the actual message.
+- ✅ To add a more refined feel to the site, let's update the timestamp in the comments section and video details to reflect when it was posted in a more human-readable format. Using YouTube as an example, a recently posted comment might display the time posted as "10 minutes ago" or "3 days ago". Apply this type of timestamp to your data without hardcoding the actual message.
+  - There are two utility functions.
+    - `formatDate` will return the date in the specific MM/DD/YYYY format.
+    - `readableDate` returns a string relative to `Date.now()`
