@@ -1,9 +1,9 @@
-// TEMP
+// imgs
 import userimg from "./assets/images/Mohan-muruge.jpg";
 import bflogo from "./assets/images/BrainFlix-logo.svg";
 import upld from "./assets/images/Icons/upload.svg";
 
-// DATA
+// Video Data
 import videoDetails from "./data/video-details-enhanced.json";
 import videos from "./data/videos.json";
 

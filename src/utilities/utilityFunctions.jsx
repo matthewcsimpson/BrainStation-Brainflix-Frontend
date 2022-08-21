@@ -17,4 +17,12 @@ const formatDate = (timestamp, options) => {
   return date.toLocaleDateString("en-us", options);
 };
 
-export { formatDate };
+/**
+ * function to return human readable, relative timestamps for comments.
+ */
+const readableDate = (timestamp) => {
+  const rightnow = Date.now();
+  console.log(formatDate(rightnow));
+};
+
+export { formatDate, readableDate };
