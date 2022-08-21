@@ -25,11 +25,11 @@ To submit this deliverable, ensure you merge your develop branch with the main b
 - ✅ Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 1 Folder Structure Diagram.
 - ✅ The site must make use of the provided assets.
 - ✅ The site must be composed of multiple React components.
-- ✅ The site must use the <video> tag for the video player.
-- ✅ Although the <video> tag will not be functional for this sprint, all visual elements of the video player must exist on the deliverable without functionality.
+- ✅ The site must use the `<video>` tag for the video player.
+- ✅ Although the `<video>` tag will not be functional for this sprint, all visual elements of the video player must exist on the deliverable without functionality.
   - ➡API data is in place for video playback to function, and commented out.
 - ✅ Use the poster attribute to have the video player resemble the mockup.
-- ✅ Video controls should be the default <video> controls. Don’t worry if the default styling doesn’t match the mockups, re-styling them will be part of the later sprint.
+- ✅ Video controls should be the default `<video>` controls. Don’t worry if the default styling doesn’t match the mockups, re-styling them will be part of the later sprint.
 - ✅ Using both of the data files provided from the assets, you must use state to hold the data and pass it down as props to generate side-videos and main-video content including comments.
 - ✅ The data files provided are meant to mimic a REST API response, where one endpoint will return a small amount of data for each video that exists, the second endpoint will return all the data for one specific video. Think about how you may use the data files provided to achieve this within your project.
 - ✅ The main-video should be included in the side-videos array held in state (with the same object keys as other side-video objects) and filtered out of the side-videos section programmatically when rendering the component.
