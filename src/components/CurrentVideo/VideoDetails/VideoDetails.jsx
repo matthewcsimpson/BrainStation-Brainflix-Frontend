@@ -18,7 +18,7 @@ function VideoDetails({ selectedVideo }) {
         <div className="details__stats">
           <div className="details__details">
             <p className="details__text details__text--title">
-              {selectedVideo.channel}
+              By {selectedVideo.channel}
             </p>
             <p className="details__text">
               {formatDate(selectedVideo.timestamp, dateOptions)}

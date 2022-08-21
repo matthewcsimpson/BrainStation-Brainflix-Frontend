@@ -4,9 +4,20 @@
 
 .hero {
     width: 100%;
-    margin: $margin-mobile 0;
+    margin: $margin-mobile 0 $margin-mobile-wider;
+    background-color: $BrainFlix-SecondaryBlack;
+    display: flex;
 
     &__video {
-        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        aspect-ratio: 16/9;
+
+
+        @include tablet {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
     }
 }

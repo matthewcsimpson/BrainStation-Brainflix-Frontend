@@ -1,10 +1,10 @@
 import "./Hero.scss";
 
-function Hero(props) {
+function Hero({ poster }) {
   return (
     <div className="hero">
-      <video className="hero__video" controls poster={props.poster}>
-        {/* <source src={props.video} type="video/mp4" /> */}
+      <video className="hero__video" controls poster={poster}>
+        {/* <source src={video} type="video/mp4" /> */}
       </video>
     </div>
   );

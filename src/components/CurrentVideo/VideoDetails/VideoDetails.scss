@@ -7,6 +7,10 @@
     width: 100%;
     padding: 0 $margin-mobile;
 
+    @include tablet {
+        padding: 0 $margin-tablet;
+    }
+
     &__top {
         // wrapper for title & stats
         width: 100%;
@@ -15,12 +19,20 @@
     &__title {
         border-bottom: 1px solid $BrainFlix-SecondarySilver;
         padding-bottom: $margin-mobile;
+
+        @include tablet {
+            padding-bottom: $margin-tablet;
+            border-bottom: none;
+        }
     }
 
     &__videotitle {
         // header tag
         font-size: $font-mobile-pageheader-size;
 
+        @include tablet {
+            font-size: $font-desktop-pageheader-size;
+        }
     }
 
     &__stats {
@@ -30,6 +42,11 @@
         flex-direction: row;
         justify-content: space-between;
 
+        @include tablet {
+            // padding: $margin-tablet $margin-tablet $margin-tablet 0;
+
+        }
+
     }
 
     &__details {
@@ -37,12 +54,24 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: row;
+            align-items: center;
+
+        }
     }
 
     &__text {
         font-size: $font-mobile-copy-body-size;
         font-weight: $font-mobile-copy-body-weight;
         color: $BrainFlix-PrimarySilver;
+
+        @include tablet {
+            font-size: $font-desktop-copy-body-size;
+            font-weight: $font-desktop-copy-body-weight;
+            padding-right: $margin-tablet;
+        }
 
         &--title {
             color: $BrainFlix-PrimaryBlack;
@@ -61,5 +90,9 @@
 
     &__synopsis {
         padding: $margin-mobile 0;
+
+        @include tablet {
+            padding: $margin-tablet 0;
+        }
     }
 }

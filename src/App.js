@@ -18,7 +18,7 @@ import CommentsList from "./components/CommentsList/CommentsList";
 import VideoList from "./components/VideoList/VideoList";
 
 function App() {
-  const [selectedVideo, setSelectedVideo] = useState(videoDetails[0]);
+  const [selectedVideo, setSelectedVideo] = useState(videoDetails[8]);
   // eslint-disable-next-line no-unused-vars
   const [videoArray] = useState(videos);
 
@@ -39,7 +39,11 @@ function App() {
         <CurrentVideo videoDetails={selectedVideo} />
         <CommentsList selectedVideo={selectedVideo} />
       </div>
-      <VideoList videoArray={videos} />
+      <VideoList
+        selectedVideo={selectedVideo}
+        videoArray={videos}
+        handleVideoSelection={handleVideoSelection}
+      />
       {/* -------------------------------- WORKING ON NOW */}
 
       {/* -------------------------------- TO BE WORKED ON */}

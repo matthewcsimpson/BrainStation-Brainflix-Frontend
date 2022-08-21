@@ -29,10 +29,9 @@
 
     &__thumbnail {
         display: block;
-        min-width: 6rem;
-        max-width: 6rem;
-        min-height: 4rem;
-        max-height: 4rem;
+        min-width: 35%;
+        max-width: 35%;
+        aspect-ratio: 16/10;
         object-fit: cover;
         border-radius: .25rem;
         margin-right: $margin-mobile;
@@ -47,7 +46,8 @@
     }
 
     &__videotitle {
-        font-size: $font-mobile-copy-body-size;
+        font-size: $font-mobile-subheader-size;
+        font-weight: $font-mobile-subheader-weight;
     }
 
     &__videochannel {
