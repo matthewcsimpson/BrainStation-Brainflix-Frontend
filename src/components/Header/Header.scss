@@ -1,5 +1,4 @@
 @use '../../styles/partials/variables' as *;
-@use '../../styles/partials/fontface' as *;
 @use '../../styles/partials/mixins' as *;
 
 
@@ -49,7 +48,7 @@
         height: 2.25rem;
         width: 80%;
         padding: 0 calc($margin-mobile*3);
-        background: url('../../assets/images/Icons/search.svg') no-repeat left $margin-mobile center;
+        background: url('../../assets/images/Icons/search.svg') no-repeat left $margin-mobile center $BrainFlix-SecondaryWhite;
         border-radius: .25rem;
         border: 1px solid $BrainFlix-PrimarySilver;
 

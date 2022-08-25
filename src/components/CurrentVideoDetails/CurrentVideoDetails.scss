@@ -1,6 +1,5 @@
-@use '../../../styles/partials/fontface' as *;
-@use '../../../styles/partials/mixins' as *;
-@use '../../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
 
 
 .details {
@@ -29,9 +28,11 @@
     &__videotitle {
         // header tag
         font-size: $font-mobile-pageheader-size;
+        font-weight: $font-mobile-pageheader-weight;
 
         @include tablet {
             font-size: $font-desktop-pageheader-size;
+            font-weight: $font-desktop-pageheader-weight;
         }
     }
 

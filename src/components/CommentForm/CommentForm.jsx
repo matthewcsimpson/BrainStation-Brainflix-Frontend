@@ -1,6 +1,6 @@
-import "../CommentsList.scss";
-import Button from "../../Button/Button";
-import Avatar from "../../Avatar/Avatar";
+import "../CommentsList/CommentsList.scss";
+import Button from "../Button/Button";
+import Avatar from "../Avatar/Avatar";
 
 function CommentsForm({ userimg, addcom }) {
   return (
@@ -22,7 +22,7 @@ function CommentsForm({ userimg, addcom }) {
             Join the conversation
           </label>
           <input
-            type="text"
+            type="textarea"
             placeholder="Add a new comment..."
             className="comments__textarea new_comment"
             id="new_comment"

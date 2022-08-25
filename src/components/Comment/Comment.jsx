@@ -1,11 +1,11 @@
 // styles
-import "../CommentsList.scss";
+import "../CommentsList/CommentsList.scss";
 
 // imports.
-import Avatar from "../../Avatar/Avatar";
+import Avatar from "../Avatar/Avatar";
 
 //utilities
-import { readableDate } from "../../../utilities/utilityFunctions";
+import { readableDate } from "../../utilities/utilityFunctions";
 
 function Comment({ comment }) {
   return (

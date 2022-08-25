@@ -6,8 +6,8 @@ import userimg from "../../assets/images/Mohan-muruge.jpg";
 import "./CommentsList.scss";
 
 // imports
-import CommentsForm from "./CommentForm/CommentForm";
-import Comment from "./Comment/Comment";
+import CommentsForm from "../CommentForm/CommentForm";
+import Comment from "../Comment/Comment";
 
 function CommentsList({ selectedVideo }) {
   return (

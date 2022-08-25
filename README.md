@@ -4,16 +4,16 @@
 
 ### Sprint 1 Feedback
 
-- Good job using multiple components to build your project. Remember to always have components within their own component folder, and not nest different components within components, or have multiple components in one folder. (https://reactjs.org/docs/faq-structure.html)
+- ✅ Good job using multiple components to build your project. Remember to always have components within their own component folder, and not nest different components within components, or have multiple components in one folder. (https://reactjs.org/docs/faq-structure.html)
 - Ensure to remove commented out code or code that is not being used anywhere before submission.
-- Consider making the comment input a <textarea> to match the mock up.
-- You can link your BrainFlix logo to homepage.
-- In your scss files, consider removing @use of any partials you're not actually using in a particular scss file
+- ✅ Consider making the comment input a <textarea> to match the mock up.
+- ✅ You can link your BrainFlix logo to homepage.
+- ✅ In your scss files, consider removing @use of any partials you're not actually using in a particular scss file
 - Consider removing the bottom border of the comments section (the border bottom of last comment) on desktop size to match the mockup.`
 - On desktop size, there is a grey border between the left and right section under the hero video. Make sure your site looks as close to the mockups as possible
 - When naming variables, consider what the variable represents rather than descriptives for best practice. (i.e. don't use 'BrainFlix-PrimaryBlue', instead consider 'button-color' etc) - Consider using kebab-case for your scss variables consistently.
-- Consider giving your comment input box a background color that matches the mock up, as well as your search input box on the header.
-- Try to increase the font weight of the video title to match the mockup.
+- ✅ Consider giving your comment input box a background color that matches the mock up, as well as your search input box on the header.
+- ✅ Try to increase the font weight of the video title to match the mockup.
 - Try to import in the direct component when you are using the import. Avoid importing in parent component and passing down as props. (eg. userimg, userimg). - Try to be consistent when naming variables using camelCase in js components. (eg. try to name as userImg instead of userimg).
 
 ### Functional Requirements

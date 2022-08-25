@@ -6,7 +6,9 @@ function Header({ bflogo, userimg, upld }) {
   return (
     <header className="header">
       <h1>
-        <img src={bflogo} alt="BrainFlix" className="header__logo" />
+        <a href="/">
+          <img src={bflogo} alt="BrainFlix" className="header__logo" />
+        </a>
       </h1>
       <form className="header__right">
         <input

@@ -1,6 +1,6 @@
 import "./CurrentVideo.scss";
 
-import VideoDetails from "./VideoDetails/VideoDetails";
+import VideoDetails from "../CurrentVideoDetails/CurrentVideoDetails";
 
 function CurrentVideo({ videoDetails }) {
   return (

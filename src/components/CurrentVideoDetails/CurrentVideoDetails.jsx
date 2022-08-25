@@ -1,10 +1,10 @@
-import "./VideoDetails.scss";
+import "./CurrentVideoDetails.scss";
 
-import { formatDate } from "../../../utilities/utilityFunctions";
-import { dateOptions } from "../../../utilities/utilityFunctions";
+import { formatDate } from "../../utilities/utilityFunctions";
+import { dateOptions } from "../../utilities/utilityFunctions";
 
-import likesimg from "../../../assets/images/Icons/likes.svg";
-import viewsimg from "../../../assets/images/Icons/views.svg";
+import likesimg from "../../assets/images/Icons/likes.svg";
+import viewsimg from "../../assets/images/Icons/views.svg";
 
 function VideoDetails({ selectedVideo }) {
   return (

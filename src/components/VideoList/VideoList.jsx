@@ -1,5 +1,5 @@
 import "./VideoList.scss";
-import Video from "./Video/Video";
+import Video from "../Video/Video";
 
 function VideoList({ selectedVideo, videoArray, handleVideoSelection }) {
   return (
