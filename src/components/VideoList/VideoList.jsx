@@ -12,12 +12,8 @@ function VideoList({ selectedVideo, videoArray, handleVideoSelection }) {
           .filter((video) => video.id !== selectedVideo.id)
           .map((video) => {
             return (
-              <Link to={`/video/${video.id}`}>
-                <Video
-                  key={video.id}
-                  vid={video}
-                  handleVideoSelection={() => handleVideoSelection(video.id)}
-                />
+              <Link to={`/video/${video.id}`} key={video.id}>
+                <Video key={video.id} vid={video} />
               </Link>
             );
           })}

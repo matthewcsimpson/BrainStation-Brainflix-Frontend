@@ -30,6 +30,7 @@ function App() {
         <Routes>
           <Route path="/" element={<VideoPage />} />
           <Route path="/video/:videoid" element={<VideoPage />} />
+          <Route path="*" element={<VideoPage />} />
         </Routes>
       </div>
     </BrowserRouter>
