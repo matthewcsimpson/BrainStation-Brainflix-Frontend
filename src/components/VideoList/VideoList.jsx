@@ -3,13 +3,13 @@ import Video from "../Video/Video";
 
 import { Link } from "react-router-dom";
 
-function VideoList({ selectedVideo, videoArray, handleVideoSelection }) {
+function VideoList({ selectedVideoId, videoArray }) {
   return (
     <div className="videoslist">
       <div className="videoslist__wrapper">
         <p className="videoslist__heading">Next Videos</p>
         {videoArray
-          .filter((video) => video.id !== selectedVideo.id)
+          .filter((video) => video.id !== selectedVideoId)
           .map((video) => {
             return (
               <Link to={`/video/${video.id}`} key={video.id}>

@@ -6,13 +6,11 @@ import { dateOptions } from "../../utilities/utilityFunctions";
 import likesimg from "../../assets/images/Icons/likes.svg";
 import viewsimg from "../../assets/images/Icons/views.svg";
 
-function VideoDetails({ selectedVideo }) {
+function CurrentVideoDetails({ selectedVideo }) {
   return (
     <>
-      {" "}
       <div className="details__top">
         <div className="details__title">
-          {/* eslint-disable jsx-a11y/heading-has-content */}
           <h2 className="details__videotitle">{selectedVideo.title}</h2>
         </div>
         <div className="details__stats">
@@ -48,4 +46,4 @@ function VideoDetails({ selectedVideo }) {
   );
 }
 
-export default VideoDetails;
+export default CurrentVideoDetails;
