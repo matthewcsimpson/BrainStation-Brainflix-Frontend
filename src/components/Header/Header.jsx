@@ -2,7 +2,7 @@ import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
 import "./Header.scss";
 
-function Header({ bflogo, userimg, upld }) {
+function Header({ bflogo, userimg, buttonIcon }) {
   return (
     <header className="header">
       <h1>
@@ -19,7 +19,7 @@ function Header({ bflogo, userimg, upld }) {
         <Avatar userimg={userimg} classModifier="header__avatar" />
         <Button
           buttonName="Upload"
-          icon={upld}
+          icon={buttonIcon}
           classModifier="header__button"
         />
       </form>

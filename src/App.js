@@ -1,7 +1,7 @@
 // imgs
 import userimg from "./assets/images/Mohan-muruge.jpg";
 import bflogo from "./assets/images/BrainFlix-logo.svg";
-import upld from "./assets/images/Icons/upload.svg";
+import uploadIcon from "./assets/images/Icons/upload.svg";
 
 // Libraries
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -26,7 +26,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="bf__wrapper">
-        <Header userimg={userimg} bflogo={bflogo} upld={upld} />
+        <Header userimg={userimg} bflogo={bflogo} buttonIcon={uploadIcon} />
         <Routes>
           <Route path="/" element={<VideoPage />} />
           <Route path="/video/:videoid" element={<VideoPage />} />
