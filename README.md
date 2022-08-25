@@ -18,7 +18,7 @@
 
 ### Functional Requirements
 
-- Clicking the BrainFlix Logo must link back to the home page (the page with the default video - which will be the first video in the side-videos list).
+- ✅ Clicking the BrainFlix Logo must link back to the home page (the page with the default video - which will be the first video in the side-videos list).
 - There must be 3 routes:
   - The `Home/Video Player` Page for displaying the details of a video.
   - The `Video Upload` Page.

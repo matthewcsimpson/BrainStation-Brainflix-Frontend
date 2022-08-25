@@ -1,6 +1,8 @@
 import "./VideoList.scss";
 import Video from "../Video/Video";
 
+import { Link } from "react-router-dom";
+
 function VideoList({ selectedVideo, videoArray, handleVideoSelection }) {
   return (
     <div className="videoslist">
@@ -10,11 +12,13 @@ function VideoList({ selectedVideo, videoArray, handleVideoSelection }) {
           .filter((video) => video.id !== selectedVideo.id)
           .map((video) => {
             return (
-              <Video
-                key={video.id}
-                vid={video}
-                handleVideoSelection={() => handleVideoSelection(video.id)}
-              />
+              <Link to={`/video/${video.id}`}>
+                <Video
+                  key={video.id}
+                  vid={video}
+                  handleVideoSelection={() => handleVideoSelection(video.id)}
+                />
+              </Link>
             );
           })}
       </div>
