@@ -5,11 +5,16 @@
 .videoslist {
     padding: 0 $margin-mobile;
 
+
+
     @include tablet {
         padding: 0 $margin-desktop;
     }
 
-    @include desktop {}
+    @include desktop {
+        border-left: 1px solid $BrainFlix-SecondarySilver;
+
+    }
 
     &__heading {
         font-size: $font-mobile-subheader-size;
@@ -43,6 +48,8 @@
         display: flex;
         padding: $margin-mobile 0;
         width: 100%;
+        color: $BrainFlix-PrimaryBlack;
+
 
         @include tablet {
             max-width: 70%;
@@ -69,6 +76,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        color: $BrainFlix-PrimaryBlack;
+
 
         @include tablet {
             padding-left: $margin-desktop;

@@ -10,7 +10,7 @@
 - ✅ You can link your BrainFlix logo to homepage.
 - ✅ In your scss files, consider removing @use of any partials you're not actually using in a particular scss file
 - Consider removing the bottom border of the comments section (the border bottom of last comment) on desktop size to match the mockup.`
-- On desktop size, there is a grey border between the left and right section under the hero video. Make sure your site looks as close to the mockups as possible
+- ✅ On desktop size, there is a grey border between the left and right section under the hero video. Make sure your site looks as close to the mockups as possible
 - When naming variables, consider what the variable represents rather than descriptives for best practice. (i.e. don't use 'BrainFlix-PrimaryBlue', instead consider 'button-color' etc) - Consider using kebab-case for your scss variables consistently.
 - ✅ Consider giving your comment input box a background color that matches the mock up, as well as your search input box on the header.
 - ✅ Try to increase the font weight of the video title to match the mockup.
