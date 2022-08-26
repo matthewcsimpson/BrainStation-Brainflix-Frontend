@@ -50,7 +50,7 @@
 
 ### Video Upload Page
 
-- The Video Upload Page must match the provided mockup. Upload functionality is not required for this sprint.
+- ✅ The Video Upload Page must match the provided mockup. Upload functionality is not required for this sprint.
 - After form submission, it should notify about “upload” and redirect to a home page with the default video selected.
 
 ### Video API

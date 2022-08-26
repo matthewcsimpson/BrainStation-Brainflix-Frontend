@@ -1,8 +1,11 @@
+// Libraries
+
+//Components
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
 import "./Header.scss";
 
-function Header({ bflogo, userimg, buttonIcon }) {
+function Header({ bflogo, userimg, buttonIcon, buttonclick }) {
   return (
     <header className="header">
       <h1>

@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Components
 import Header from "./components/Header/Header";
 import VideoPage from "./pages/VideoPage";
+import UploadPage from "./pages/UploadPage";
 
 function App() {
   /**
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<VideoPage />} />
           <Route path="/video/:videoid" element={<VideoPage />} />
+          <Route path="/upload" element={<UploadPage />} />
           <Route path="*" element={<VideoPage />} />
         </Routes>
       </div>

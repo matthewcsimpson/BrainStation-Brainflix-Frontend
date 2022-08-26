@@ -1,0 +1,89 @@
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/variables' as *;
+
+
+.uploadform {
+    padding: 0 $margin-mobile;
+
+    @include tablet {
+        padding: 0 $margin-tablet;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding-top: $margin-mobile
+    }
+
+    &__imgwrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__thumbnail-img {
+        max-width: 100%;
+        margin-bottom: $margin-mobile;
+
+        @include tablet {
+            max-width: 50%;
+        }
+
+    }
+
+    &__label {
+        font-size: $font-mobile-buttonslabels-size;
+        font-weight: $font-desktop-buttonslabels-weight;
+        color: $BrainFlix-PrimarySilver;
+        text-transform: uppercase;
+        padding-bottom: $margin-mobile;
+
+        @include tablet {
+            font-size: $font-desktop-buttonslabels-size;
+        }
+    }
+
+    &__textinput {
+        margin-bottom: $margin-mobile;
+        height: 2.25rem;
+        background-color: $BrainFlix-SecondaryWhite;
+        padding: 0 $margin-mobile;
+        border-radius: .25rem;
+        border: 1px solid $BrainFlix-PrimarySilver;
+
+        &--desc {
+            height: 4.5rem;
+
+        }
+
+    }
+
+    &__buttonswrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 90px;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: flex-end;
+            height: 50px;
+        }
+    }
+}
+
+.cancel__button {
+    color: $BrainFlix-PrimaryBlue;
+    background-color: $Brainflix-PrimaryWhite;
+
+
+    &:hover {
+        background-color: $BrainFlix-SecondaryWhite;
+    }
+}
+
+.upload__button__ordering {
+    @include tablet {
+        order: 1;
+    }
+
+}
