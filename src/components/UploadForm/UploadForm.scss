@@ -9,15 +9,47 @@
         padding: 0 $margin-tablet;
     }
 
+    &__heading {
+        font-size: $font-mobile-pageheader-size;
+        font-weight: $font-mobile-pageheader-weight;
+        margin: $margin-mobile 0;
+        padding: $margin-mobile 0;
+        border-top: 1px solid $BrainFlix-SecondarySilver;
+        border-bottom: 1px solid $BrainFlix-SecondarySilver;
+
+        @include tablet {
+            font-size: $font-desktop-pageheader-size;
+            font-weight: $font-desktop-pageheader-weight;
+            margin: $margin-desktop 0;
+            padding: $margin-desktop 0;
+        }
+    }
+
     &__form {
         display: flex;
         flex-direction: column;
-        padding-top: $margin-mobile
+        padding-top: $margin-mobile;
+    }
+
+    &__flexwrapper {
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
     }
 
     &__imgwrapper {
         display: flex;
         flex-direction: column;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 30%;
+        }
     }
 
     &__thumbnail-img {
@@ -25,7 +57,7 @@
         margin-bottom: $margin-mobile;
 
         @include tablet {
-            max-width: 50%;
+            max-width: 100%;
         }
 
     }
@@ -39,12 +71,22 @@
 
         @include tablet {
             font-size: $font-desktop-buttonslabels-size;
+            font-weight: $font-desktop-buttonslabels-weight;
+        }
+    }
+
+    &__fieldswrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            width: 68%;
         }
     }
 
     &__textinput {
         margin-bottom: $margin-mobile;
-        height: 2.25rem;
+        min-height: 2.25rem;
         background-color: $BrainFlix-SecondaryWhite;
         padding: 0 $margin-mobile;
         border-radius: .25rem;
@@ -52,6 +94,10 @@
 
         &--desc {
             height: 4.5rem;
+
+            @include desktop {
+                height: 7rem;
+            }
 
         }
 
@@ -62,6 +108,9 @@
         flex-direction: column;
         justify-content: space-between;
         height: 90px;
+        padding: $margin-mobile;
+        border-top: 1px solid $BrainFlix-SecondarySilver;
+
 
         @include tablet {
             flex-direction: row;
