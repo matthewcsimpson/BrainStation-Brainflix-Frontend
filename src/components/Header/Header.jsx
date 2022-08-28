@@ -1,13 +1,19 @@
+// Styles
+import "./Header.scss";
+
 // Libraries
 import { useNavigate } from "react-router-dom";
 
 //Components
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
-import "./Header.scss";
 
 function Header({ bflogo, userImg, buttonIcon }) {
   let nav = useNavigate();
+
+  /**
+   * Function to navigate to the upload page when upload button is clicked.
+   */
   const navigateToUploads = () => {
     nav("/upload");
   };

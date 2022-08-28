@@ -1,4 +1,6 @@
+// Style
 import "./Avatar.scss";
+
 function Avatar({ userImg, classModifier }) {
   return (
     <div

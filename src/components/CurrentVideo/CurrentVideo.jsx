@@ -1,5 +1,7 @@
+// styles
 import "./CurrentVideo.scss";
 
+// components
 import CurrentVideoDetails from "../CurrentVideoDetails/CurrentVideoDetails";
 
 function CurrentVideo({ videoDetails }) {

@@ -1,3 +1,4 @@
+// Style
 import "./Button.scss";
 
 function Button({ icon, buttonName, classModifier, clickHandler }) {

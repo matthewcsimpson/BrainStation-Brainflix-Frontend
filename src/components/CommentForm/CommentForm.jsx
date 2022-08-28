@@ -1,4 +1,7 @@
+// styles
 import "../CommentsList/CommentsList.scss";
+
+// components
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
 

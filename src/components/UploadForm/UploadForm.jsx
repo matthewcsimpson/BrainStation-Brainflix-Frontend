@@ -1,6 +1,10 @@
+// Styles
 import "./UploadForm.scss";
+
+// Components
 import Button from "../Button/Button";
 
+// Assets
 import upload from "../../assets/images/Icons/upload.svg";
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
 

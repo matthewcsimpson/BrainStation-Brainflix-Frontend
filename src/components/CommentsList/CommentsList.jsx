@@ -5,7 +5,7 @@ import userImg from "../../assets/images/Mohan-muruge.jpg";
 // styles
 import "./CommentsList.scss";
 
-// imports
+// components
 import CommentsForm from "../CommentForm/CommentForm";
 import Comment from "../Comment/Comment";
 

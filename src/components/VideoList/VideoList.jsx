@@ -1,6 +1,10 @@
+// Styles
 import "./VideoList.scss";
+
+// Components
 import Video from "../Video/Video";
 
+// Libraries
 import { Link } from "react-router-dom";
 
 function VideoList({ selectedVideoId, videoArray }) {

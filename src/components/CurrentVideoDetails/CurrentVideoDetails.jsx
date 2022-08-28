@@ -1,8 +1,10 @@
+// styles
 import "./CurrentVideoDetails.scss";
 
-import { formatDate } from "../../utilities/utilityFunctions";
-import { dateOptions } from "../../utilities/utilityFunctions";
+// utilities
+import { formatDate, dateOptions } from "../../utilities/utilityFunctions";
 
+// assets
 import likesimg from "../../assets/images/Icons/likes.svg";
 import viewsimg from "../../assets/images/Icons/views.svg";
 

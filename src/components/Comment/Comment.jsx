@@ -1,7 +1,7 @@
 // styles
 import "../CommentsList/CommentsList.scss";
 
-// imports.
+// components
 import Avatar from "../Avatar/Avatar";
 
 //utilities

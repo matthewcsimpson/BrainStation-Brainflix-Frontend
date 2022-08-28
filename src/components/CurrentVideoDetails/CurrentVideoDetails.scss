@@ -43,10 +43,7 @@
         flex-direction: row;
         justify-content: space-between;
 
-        @include tablet {
-            // padding: $margin-tablet $margin-tablet $margin-tablet 0;
-
-        }
+        @include tablet {}
 
     }
 
