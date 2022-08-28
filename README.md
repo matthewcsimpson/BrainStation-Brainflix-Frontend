@@ -15,7 +15,7 @@
   - 📝 Feedback recevied, but not impliemented for this project.
 - ✅ Consider giving your comment input box a background color that matches the mock up, as well as your search input box on the header.
 - ✅ Try to increase the font weight of the video title to match the mockup.
-- Try to import in the direct component when you are using the import. Avoid importing in parent component and passing down as props. (eg. userimg, userimg). - Try to be consistent when naming variables using camelCase in js components. (eg. try to name as userImg instead of userimg).
+- ✅ Try to import in the direct component when you are using the import. Avoid importing in parent component and passing down as props. (eg. userimg, userimg). - Try to be consistent when naming variables using camelCase in js components. (eg. try to name as userImg instead of userimg).
 
 ### Functional Requirements
 
