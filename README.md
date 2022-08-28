@@ -5,7 +5,7 @@
 ### Sprint 1 Feedback
 
 - ✅ Good job using multiple components to build your project. Remember to always have components within their own component folder, and not nest different components within components, or have multiple components in one folder. (https://reactjs.org/docs/faq-structure.html)
-- Ensure to remove commented out code or code that is not being used anywhere before submission.
+- ✅ Ensure to remove commented out code or code that is not being used anywhere before submission.
 - ✅ Consider making the comment input a <textarea> to match the mock up.
 - ✅ You can link your BrainFlix logo to homepage.
 - ✅ In your scss files, consider removing @use of any partials you're not actually using in a particular scss file
