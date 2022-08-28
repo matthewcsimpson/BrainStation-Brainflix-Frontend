@@ -9,6 +9,11 @@
         padding: 0 $margin-tablet;
     }
 
+    @include desktop {
+        max-width: $breakpoint-desktop;
+        margin: 0 auto;
+    }
+
     &__heading {
         font-size: $font-mobile-pageheader-size;
         font-weight: $font-mobile-pageheader-weight;
