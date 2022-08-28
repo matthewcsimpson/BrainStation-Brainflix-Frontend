@@ -1,8 +1,12 @@
 import "./Button.scss";
 
-function Button({ icon, buttonName, classModifier }) {
+function Button({ icon, buttonName, classModifier, clickHandler }) {
   return (
-    <button className={`glbl__button ${classModifier}`} type="submit">
+    <button
+      className={`glbl__button ${classModifier}`}
+      type="submit"
+      onClick={() => clickHandler()}
+    >
       <img className="glbl__button__image" src={icon} alt="" />
       <span className="glbl__button__text">{buttonName}</span>
       <span className="glbl__button__spacer"></span>

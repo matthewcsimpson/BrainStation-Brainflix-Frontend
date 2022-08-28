@@ -11,7 +11,7 @@ function Comment({ comment }) {
   return (
     <div className="comments__comment">
       <div className="comments__avatar-wrapper comments__avatar-wrapper--comment">
-        <Avatar userimg={comment.img} />
+        <Avatar userImg={comment.img} />
       </div>
       <div className="comments__comment-body">
         <div className="comments__detailswrapper">

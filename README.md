@@ -11,7 +11,8 @@
 - ✅ In your scss files, consider removing @use of any partials you're not actually using in a particular scss file
 - Consider removing the bottom border of the comments section (the border bottom of last comment) on desktop size to match the mockup.`
 - ✅ On desktop size, there is a grey border between the left and right section under the hero video. Make sure your site looks as close to the mockups as possible
-- When naming variables, consider what the variable represents rather than descriptives for best practice. (i.e. don't use 'BrainFlix-PrimaryBlue', instead consider 'button-color' etc) - Consider using kebab-case for your scss variables consistently.
+- 📝 When naming variables, consider what the variable represents rather than descriptives for best practice. (i.e. don't use 'BrainFlix-PrimaryBlue', instead consider 'button-color' etc) - Consider using kebab-case for your scss variables consistently.
+  - 📝 Feedback recevied, but not impliemented for this project.
 - ✅ Consider giving your comment input box a background color that matches the mock up, as well as your search input box on the header.
 - ✅ Try to increase the font weight of the video title to match the mockup.
 - Try to import in the direct component when you are using the import. Avoid importing in parent component and passing down as props. (eg. userimg, userimg). - Try to be consistent when naming variables using camelCase in js components. (eg. try to name as userImg instead of userimg).
@@ -21,10 +22,10 @@
 - ✅ Clicking the BrainFlix Logo must link back to the home page (the page with the default video - which will be the first video in the side-videos list).
 - There must be 3 routes:
   - ✅ The `Home/Video Player` Page for displaying the details of a video.
-  - The `Video Upload` Page.
+  - ✅ The `Video Upload` Page.
   - ✅ A route that will load the video with the provided `video id` to be displayed using the `Video Player Page`.
 - ✅ Clicking on a video in the “Next Video” list must go to the `Video Details` Page for the selected video via routing and display all the information for the video such as (likes, views, author, comments, etc).
-- Clicking on the `“Upload”` button must link to the Video Upload Page.
+- ✅ Clicking on the `“Upload”` button must link to the Video Upload Page.
 
 ### Visual Design Requirements
 

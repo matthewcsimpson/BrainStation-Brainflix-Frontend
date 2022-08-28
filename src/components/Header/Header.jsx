@@ -1,11 +1,17 @@
 // Libraries
+import { useNavigate } from "react-router-dom";
 
 //Components
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
 import "./Header.scss";
 
-function Header({ bflogo, userimg, buttonIcon, buttonclick }) {
+function Header({ bflogo, userImg, buttonIcon }) {
+  let nav = useNavigate();
+  const navigateToUploads = () => {
+    nav("/upload");
+  };
+
   return (
     <header className="header">
       <h1>
@@ -19,11 +25,12 @@ function Header({ bflogo, userimg, buttonIcon, buttonclick }) {
           placeholder="Search..."
           className="header__searchbar"
         ></input>
-        <Avatar userimg={userimg} classModifier="header__avatar" />
+        <Avatar userImg={userImg} classModifier="header__avatar" />
         <Button
           buttonName="Upload"
           icon={buttonIcon}
           classModifier="header__button"
+          clickHandler={navigateToUploads}
         />
       </form>
     </header>

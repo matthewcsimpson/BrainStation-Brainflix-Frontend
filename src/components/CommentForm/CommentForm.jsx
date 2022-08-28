@@ -2,7 +2,7 @@ import "../CommentsList/CommentsList.scss";
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
 
-function CommentsForm({ userimg, addcom }) {
+function CommentsForm({ userImg, addcom }) {
   return (
     <form className="comments__form">
       <div className="dumbwrapper">
@@ -13,7 +13,7 @@ function CommentsForm({ userimg, addcom }) {
           >
             Avatar
           </label>
-          <Avatar userimg={userimg} />
+          <Avatar userImg={userImg} />
         </div>
       </div>
       <div className="comments__form-input">

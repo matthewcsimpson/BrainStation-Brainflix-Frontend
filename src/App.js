@@ -1,5 +1,5 @@
 // imgs
-import userimg from "./assets/images/Mohan-muruge.jpg";
+import userImg from "./assets/images/Mohan-muruge.jpg";
 import bflogo from "./assets/images/BrainFlix-logo.svg";
 import uploadIcon from "./assets/images/Icons/upload.svg";
 
@@ -27,7 +27,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="bf__wrapper">
-        <Header userimg={userimg} bflogo={bflogo} buttonIcon={uploadIcon} />
+        <Header userImg={userImg} bflogo={bflogo} buttonIcon={uploadIcon} />
         <Routes>
           <Route path="/" element={<VideoPage />} />
           <Route path="/video/:videoid" element={<VideoPage />} />

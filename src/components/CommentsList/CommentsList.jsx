@@ -1,6 +1,6 @@
 // images
 import addcom from "../../assets/images/Icons/add_comment.svg";
-import userimg from "../../assets/images/Mohan-muruge.jpg";
+import userImg from "../../assets/images/Mohan-muruge.jpg";
 
 // styles
 import "./CommentsList.scss";
@@ -14,7 +14,7 @@ function CommentsList({ selectedVideo }) {
     <div className="comments">
       <CommentsForm
         selectedVideo={selectedVideo}
-        userimg={userimg}
+        userImg={userImg}
         addcom={addcom}
       />
       {selectedVideo.comments.map((comment) => {
