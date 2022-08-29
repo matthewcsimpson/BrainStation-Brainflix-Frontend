@@ -2,6 +2,33 @@
 
 ## Sprint 3 - Front End
 
+### Video Upload Page
+
+- With the "Video Upload" page now created, add the actual upload functionality. Specifically, this should include an event handler for the upload form so that when a user submits a new video, it posts the video to your API in order to save it to the list of videos. A new video needs to be persisted in a JSON file with the app data.
+- There is no requirement for uploading an image file, instead, you need to hardcode an image path when creating a new video, corresponding to a static asset path from the Node server.
+- Since the upload form only has title and description input fields, feel free to fill any missing data for a new video object with placeholder values, not with extra form inputs.
+
+### Visual Design Requirements
+
+- The site must be responsive at and between breakpoints. Therefore it should closely resemble the mockups in the design package.
+- Any inconsistencies with the design that exist from previous sprints should be resolved so that the final app matches the mockups as closely as possible.
+- Any feedback that has been provided around the visual design from previous Sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested.
+
+### Implementation Requirements
+
+- Any feedback that has been provided around your implementation from previous sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested. If you have questions about how to implement a piece of feedback, ask someone from the Education Team.
+- Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 3 folder Structure Diagram.
+- The site must make use of the provided assets.
+- The app must use multiple React components as discussed in class.
+- The app must use react-router-dom with multiple routes, one for each page.
+- The project's CSS must use SASS variables.
+- The CSS must use BEM principles when naming classes.
+- The site should use Flexbox for layout control.
+
+#### Structure Diagram
+
+![Structure Diagram](Brainflix-S3-Structure.png)
+
 ## Sprint 2
 
 ### Sprint 1 Feedback
