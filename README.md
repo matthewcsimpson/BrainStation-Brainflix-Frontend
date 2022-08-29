@@ -27,7 +27,7 @@
 
 #### Structure Diagram
 
-![Structure Diagram](Brainflix-S3-Structure.png)
+![Structure Diagram](BrainFlix-S3-Structure.png)
 
 ## Sprint 2
 
