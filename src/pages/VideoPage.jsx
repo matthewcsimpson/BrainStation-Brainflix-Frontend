@@ -18,15 +18,14 @@ function VideoPage() {
   const { videoid } = useParams();
 
   /**
-   * Function to load a list of videos from an external source.
-   * No parameters
+   * Function to load a list of videos from the shiny new API that I have created.
    */
-  const loadRemoteVideoArray = () => {
+  const newLoadRemoteVideoArray = () => {
     axios
-      .get(`${api.apiBaseUrl}/videos${api.apiKeyString}`)
+      .get(`${api.newApiBaseUrl}/videos`)
       .then((res) => {
         setVideoArray(res.data);
-        loadSpecificVideoDetails(res.data[0].id);
+        newLoadSpecificVideoDetails(res.data[0].id);
       })
       .catch((e) => {
         console.error(e);
@@ -34,12 +33,12 @@ function VideoPage() {
   };
 
   /**
-   * Function to load the details of a specific video.
+   * Function to load the details of a specific video from the shiny new API I have made.
    * @param {string} id
    */
-  const loadSpecificVideoDetails = (id) => {
+  const newLoadSpecificVideoDetails = (id) => {
     axios
-      .get(`${api.apiBaseUrl}/videos/${id}${api.apiKeyString}`)
+      .get(`${api.newApiBaseUrl}/videos/${id}`)
       .then((res) => {
         setSelectedVideo(res.data);
       })
@@ -52,7 +51,7 @@ function VideoPage() {
    * useEffect to call the loadRemoteVideoList() function;
    */
   useEffect(() => {
-    loadRemoteVideoArray();
+    newLoadRemoteVideoArray();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -62,7 +61,7 @@ function VideoPage() {
    */
   useEffect(() => {
     if (videoid) {
-      loadSpecificVideoDetails(videoid);
+      newLoadSpecificVideoDetails(videoid);
     }
   }, [videoid]);
 
