@@ -10,20 +10,20 @@
 
 ### Visual Design Requirements
 
-- The site must be responsive at and between breakpoints. Therefore it should closely resemble the mockups in the design package.
+- ✅ The site must be responsive at and between breakpoints. Therefore it should closely resemble the mockups in the design package.
 - Any inconsistencies with the design that exist from previous sprints should be resolved so that the final app matches the mockups as closely as possible.
 - Any feedback that has been provided around the visual design from previous Sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested.
 
 ### Implementation Requirements
 
 - Any feedback that has been provided around your implementation from previous sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested. If you have questions about how to implement a piece of feedback, ask someone from the Education Team.
-- Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 3 folder Structure Diagram.
-- The site must make use of the provided assets.
-- The app must use multiple React components as discussed in class.
-- The app must use react-router-dom with multiple routes, one for each page.
-- The project's CSS must use SASS variables.
-- The CSS must use BEM principles when naming classes.
-- The site should use Flexbox for layout control.
+- ✅ Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 3 folder Structure Diagram.
+- ✅ The site must make use of the provided assets.
+- ✅ The app must use multiple React components as discussed in class.
+- ✅ The app must use react-router-dom with multiple routes, one for each page.
+- ✅ The project's CSS must use SASS variables.
+- ✅ The CSS must use BEM principles when naming classes.
+- ✅ The site should use Flexbox for layout control.
 
 #### Structure Diagram
 

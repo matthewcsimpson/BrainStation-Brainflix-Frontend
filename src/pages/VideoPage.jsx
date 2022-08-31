@@ -24,6 +24,7 @@ function VideoPage() {
     axios
       .get(`${api.newApiBaseUrl}/videos`)
       .then((res) => {
+        console.log(res);
         setVideoArray(res.data);
         newLoadSpecificVideoDetails(res.data[0].id);
       })

@@ -5,14 +5,20 @@ import "./UploadForm.scss";
 import Button from "../Button/Button";
 
 // Libraries
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 // Assets
 import upload from "../../assets/images/Icons/upload.svg";
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
+import api from "../../data/./api_data.json";
 
 function UploadForm() {
-  const nav = useNavigate();
+  // const nav = useNavigate();
+
+  const clickHandler = () => {
+    console.log("clicked!");
+  };
 
   /**
    *Function to handle form submission.
@@ -20,10 +26,26 @@ function UploadForm() {
    */
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.title.value);
-    console.log(e.target.description.value);
-    alert(`Uploading ${e.target.title.value}...`);
-    nav("/");
+    if (!e.target.title.value || !e.target.description.value) {
+      return;
+    }
+
+    const newVideo = {
+      title: e.target.title.value,
+      description: e.target.description.value,
+    };
+
+    axios
+      .post(`${api.newApiBaseUrl}/videos`, newVideo)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+
+    // alert(`Uploading ${e.target.title.value}...`);
+    // nav("/");
   };
 
   return (
@@ -68,11 +90,13 @@ function UploadForm() {
             icon={upload}
             buttonName="publish"
             classModifier="upload__button__ordering"
+            clickHandler={clickHandler}
           />
           <Button
             icon={upload}
             buttonName="cancel"
             classModifier="cancel__button"
+            clickHandler={clickHandler}
           />
         </div>
       </form>
