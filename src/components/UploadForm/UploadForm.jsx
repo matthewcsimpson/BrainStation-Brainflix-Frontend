@@ -2,7 +2,7 @@
 import "./UploadForm.scss";
 
 // Components
-import Button from "../Button/Button";
+import SiteButton from "../SiteButton/SiteButton";
 
 // Libraries
 // import { useNavigate } from "react-router-dom";
@@ -86,13 +86,13 @@ function UploadForm() {
           </div>
         </div>
         <div className="uploadform__buttonswrapper">
-          <Button
+          <SiteButton
             icon={upload}
             buttonName="publish"
             classModifier="upload__button__ordering"
             clickHandler={clickHandler}
           />
-          <Button
+          <SiteButton
             icon={upload}
             buttonName="cancel"
             classModifier="cancel__button"

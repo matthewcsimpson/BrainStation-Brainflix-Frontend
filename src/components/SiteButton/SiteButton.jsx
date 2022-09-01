@@ -1,7 +1,7 @@
 // Style
-import "./Button.scss";
+import "./SiteButton.scss";
 
-function Button({ icon, buttonName, classModifier, clickHandler }) {
+function SiteButton({ icon, buttonName, classModifier, clickHandler }) {
   return (
     <button
       className={`glbl__button ${classModifier}`}
@@ -15,4 +15,4 @@ function Button({ icon, buttonName, classModifier, clickHandler }) {
   );
 }
 
-export default Button;
+export default SiteButton;

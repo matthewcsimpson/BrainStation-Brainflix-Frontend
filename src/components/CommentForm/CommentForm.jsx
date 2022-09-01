@@ -2,7 +2,7 @@
 import "../CommentsList/CommentsList.scss";
 
 // components
-import Button from "../Button/Button";
+import SiteButton from "../SiteButton/SiteButton";
 import Avatar from "../Avatar/Avatar";
 
 function CommentsForm({ userImg, addcom }) {
@@ -38,7 +38,7 @@ function CommentsForm({ userImg, addcom }) {
           >
             Comment
           </label>
-          <Button
+          <SiteButton
             icon={addcom}
             buttonName={"Comment"}
             classModified="false"

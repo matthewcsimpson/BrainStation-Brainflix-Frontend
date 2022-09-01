@@ -1,11 +1,11 @@
 // Styles
-import "./Header.scss";
+import "./PageHeader.scss";
 
 // Libraries
 import { useNavigate } from "react-router-dom";
 
 //Components
-import Button from "../Button/Button";
+import Button from "../SiteButton/SiteButton";
 import Avatar from "../Avatar/Avatar";
 
 function PageHeader({ bflogo, userImg, buttonIcon }) {

@@ -9,27 +9,27 @@ The server runs on port 8888. I have saved the server URL string in a JSON file 
 
 ### Print 2 Feedback
 
-- Consider renaming your components that are named after HTML elements. For example, Header could become PageHeader. This would be a more descriptive name, and wouldn’t confuse other developers.
+- ✅ Consider renaming your components that are named after HTML elements. For example, Header could become PageHeader. This would be a more descriptive name, and wouldn’t confuse other developers.
 - ✅ You can delete the data json files used for previous sprint, as we are not using them anymore.
 - ✅ If you are ignoring your api data, consider adding some installation instructions and examples in your README, so that others who try to run your project have an idea how to set it up. You can also look into dotenv (.env) to set them as environment variables.
 - ✅ When at your ‘/video/id’ route, regardless of the id within the route, when you refresh your page, it goes back to BMX video. Look into ways you can fix this from happening.
 - 📝 For your video description input, consider making it a textarea to match the mockup.
   - 📝 It is one already!
-- Consider passing down a clickHandler prop for your publish Button and cancel Button on your upload form or modify your Button component to resolve the error on clicking the publish and cancel button.
+- ✅ Consider passing down a clickHandler prop for your publish Button and cancel Button on your upload form or modify your Button component to resolve the error on clicking the publish and cancel button.
 
 ### API Server - Functional Requirements
 
-- The end-points and response structure of your API server must match that of the mock API server.
+- ✅ The end-points and response structure of your API server must match that of the mock API server.
 - The API must have the following end-points:
   - ✅ `GET` `/videos` that responds with an array of videos.
   - ✅ `GET` `/videos/:id` that responds with an object containing the details of the video with an id of :id.
-  - `POST` `/videos` that will add a new video to the video list. A unique id must be generated for each video added.
-- Submitting a new video from the form must POST to the API. There is no requirement for a user to upload the image, therefore you as the developer must provide the hard-coded image path for the video thumbnail on the front-end during the form submission within the request body.
+  - ✅ `POST` `/videos` that will add a new video to the video list. A unique id must be generated for each video added.
+- ✅ Submitting a new video from the form must POST to the API. There is no requirement for a user to upload the image, therefore you as the developer must provide the hard-coded image path for the video thumbnail on the front-end during the form submission within the request body.
 - ✅ Images should be served as static assets from the Node server.
-  - Including the image used for creating a new video via Upload Form
-- The data should persist on the server. If you restart Node server, the data shouldn't reset. This means you need to use a JSON file for persistence, writing to it, and reading from it.
+  - ✅ Including the image used for creating a new video via Upload Form
+- ✅ The data should persist on the server. If you restart Node server, the data shouldn't reset. This means you need to use a JSON file for persistence, writing to it, and reading from it.
 - ✅ You should have a single source of truth for your data. Only one JSON file should be used to store all the data on your server.
-  - Since you are now creating your own REST API, you now have to think about how you will use your one data file to mimic the API response from Sprint 2. One endpoint will return a small amount of data for each video that exists, the second endpoint will return all the data for one specific video. Think about how you may use your data file to achieve this within your project.
+  - ✅ Since you are now creating your own REST API, you now have to think about how you will use your one data file to mimic the API response from Sprint 2. One endpoint will return a small amount of data for each video that exists, the second endpoint will return all the data for one specific video. Think about how you may use your data file to achieve this within your project.
 
 ### Implementation Requirements
 
@@ -41,19 +41,19 @@ The server runs on port 8888. I have saved the server URL string in a JSON file 
 
 ### Video Upload Page
 
-- With the "Video Upload" page now created, add the actual upload functionality. Specifically, this should include an event handler for the upload form so that when a user submits a new video, it posts the video to your API in order to save it to the list of videos. A new video needs to be persisted in a JSON file with the app data.
-- There is no requirement for uploading an image file, instead, you need to hardcode an image path when creating a new video, corresponding to a static asset path from the Node server.
-- Since the upload form only has title and description input fields, feel free to fill any missing data for a new video object with placeholder values, not with extra form inputs.
+- ✅ With the "Video Upload" page now created, add the actual upload functionality. Specifically, this should include an event handler for the upload form so that when a user submits a new video, it posts the video to your API in order to save it to the list of videos. A new video needs to be persisted in a JSON file with the app data.
+- ✅ There is no requirement for uploading an image file, instead, you need to hardcode an image path when creating a new video, corresponding to a static asset path from the Node server.
+- ✅ Since the upload form only has title and description input fields, feel free to fill any missing data for a new video object with placeholder values, not with extra form inputs.
 
 ### Visual Design Requirements
 
 - ✅ The site must be responsive at and between breakpoints. Therefore it should closely resemble the mockups in the design package.
-- Any inconsistencies with the design that exist from previous sprints should be resolved so that the final app matches the mockups as closely as possible.
-- Any feedback that has been provided around the visual design from previous Sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested.
+- ✅ Any inconsistencies with the design that exist from previous sprints should be resolved so that the final app matches the mockups as closely as possible.
+- ✅ Any feedback that has been provided around the visual design from previous Sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested.
 
 ### Implementation Requirements
 
-- Any feedback that has been provided around your implementation from previous sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested. If you have questions about how to implement a piece of feedback, ask someone from the Education Team.
+- ✅ Any feedback that has been provided around your implementation from previous sprints must be incorporated into this final Sprint. This Sprint represents the completed product that the “client” has requested. If you have questions about how to implement a piece of feedback, ask someone from the Education Team.
 - ✅ Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 3 folder Structure Diagram.
 - ✅ The site must make use of the provided assets.
 - ✅ The app must use multiple React components as discussed in class.
@@ -65,6 +65,37 @@ The server runs on port 8888. I have saved the server URL string in a JSON file 
 #### Structure Diagram
 
 ![Structure Diagram](BrainFlix-S3-Structure.png)
+
+## Diving Deeper
+
+Diving Deeper challenges should only be attempted if all project requirements are met and adding Diving Deeper challenges do not conflict with the existing requirements. The following are suggestions that you can try to take your understanding deeper and go above and beyond the basic requirements.
+
+### Comments endpoints from Sprint 2 Diving Deeper
+
+- Implement POST and DELETE endpoints from Sprint 2.
+  - `POST` `/videos/:id/comments` for creating a new comment
+  - `DELETE` `/videos/:videoId/comments/:commentId` for deleting a comment
+
+### Custom Video Player
+
+- You may use this sample video [here](https://api.brainstation.io/content/link/1peqEgETfFfse7GYQBod138cq5E4fBeL2)
+
+- Video controls should not be the default `<video>` controls. They should be added and styled with the provided assets, CSS, and appropriate HTML elements. Refer to sprints 1 & 2 design packages.
+
+- Given the provided creative mockups, add full functionality to the video player. This includes details such as the play/pause functionality, the blue scrubber bar, fullscreen, time tracking, and volume control. All necessary assets should be included within your original design package. For volume control, feel free to reuse the scrubber design and assets.
+
+### Upload Custom Poster Image
+
+- Rather than have a hard coded image path for the poster image of the uploaded video, add an input field to your upload form that allows the user to upload an image from their local machine.
+- The image should be added to your Node server and the data should not be reset if the Node server restarts.
+- Images do not need to be cropped upon upload.
+- There should be a default placeholder image should the user not provide one, or there should be validation to check that there is an image provided before posting to your Node server.
+
+### Liking Videos
+
+- Part 1: Implement a `PUT` endpoint at `/videos/:videoId/likes` that increments the like count of the video specified by video.
+
+- Part 2: Building on the previous task, hook up an event handler to the like button (in the React front-end) to send a `PUT` request to hit your `/videos/:videoId/likes` endpoint.
 
 .
 .
