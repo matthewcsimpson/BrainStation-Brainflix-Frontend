@@ -5,7 +5,7 @@ import "./UploadForm.scss";
 import SiteButton from "../SiteButton/SiteButton";
 
 // Libraries
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 // Assets
@@ -14,7 +14,7 @@ import thumbnail from "../../assets/images/Upload-video-preview.jpg";
 import api from "../../data/./api_data.json";
 
 function UploadForm() {
-  // const nav = useNavigate();
+  const nav = useNavigate();
 
   const clickHandler = () => {
     console.log("clicked!");
@@ -44,8 +44,8 @@ function UploadForm() {
         console.error(e);
       });
 
-    // alert(`Uploading ${e.target.title.value}...`);
-    // nav("/");
+    alert(`Uploading ${newVideo.title}...`);
+    nav("/");
   };
 
   return (
