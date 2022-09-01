@@ -13,9 +13,9 @@ import axios from "axios";
 import api from "../data/api_data.json";
 
 function VideoPage() {
+  const { videoid } = useParams();
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [videoArray, setVideoArray] = useState(null);
-  const { videoid } = useParams();
 
   /**
    * Function to load a list of videos from the shiny new API that I have created.
@@ -26,7 +26,6 @@ function VideoPage() {
       .then((res) => {
         console.log(res);
         setVideoArray(res.data);
-        newLoadSpecificVideoDetails(res.data[0].id);
       })
       .catch((e) => {
         console.error(e);
@@ -42,6 +41,7 @@ function VideoPage() {
       .get(`${api.newApiBaseUrl}/videos/${id}`)
       .then((res) => {
         setSelectedVideo(res.data);
+        console.info(res.data);
       })
       .catch((e) => {
         console.error(e);
