@@ -24,8 +24,10 @@ function VideoPage() {
     axios
       .get(`${api.newApiBaseUrl}/videos`)
       .then((res) => {
-        console.log(res);
         setVideoArray(res.data);
+        if (!videoid) {
+          newLoadSpecificVideoDetails(res.data[0].id);
+        }
       })
       .catch((e) => {
         console.error(e);
@@ -41,7 +43,6 @@ function VideoPage() {
       .get(`${api.newApiBaseUrl}/videos/${id}`)
       .then((res) => {
         setSelectedVideo(res.data);
-        console.info(res.data);
       })
       .catch((e) => {
         console.error(e);
