@@ -35,8 +35,6 @@ The server runs on port 8888. I have saved the server URL string in a JSON file 
 
 - ✅ Your project must follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 3 folder Structure Diagram.
 
-![Structure](BrainFlix-S3-Structure.png)
-
 ## Sprint 3 - Front End
 
 ### Video Upload Page

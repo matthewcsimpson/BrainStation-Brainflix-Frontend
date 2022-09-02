@@ -5,9 +5,24 @@ import "../CommentsList/CommentsList.scss";
 import SiteButton from "../SiteButton/SiteButton";
 import Avatar from "../Avatar/Avatar";
 
-function CommentsForm({ userImg, addcom }) {
+// libraries
+// import axios from "axios";
+
+function CommentsForm({ selectedVideo, userImg, addcom }) {
+  const clickHandler = () => {
+    console.log("clicked!");
+    console.log(selectedVideo.comments);
+  };
+
+  const postComment = (comment) => {};
+
+  const commentSubmit = (e) => {
+    e.preventDefault();
+    console.log(e.target.new_comment.value);
+  };
+
   return (
-    <form className="comments__form">
+    <form className="comments__form" onSubmit={commentSubmit}>
       <div className="dumbwrapper">
         <div className="comments__avatar-wrapper">
           <label
@@ -43,6 +58,7 @@ function CommentsForm({ userImg, addcom }) {
             buttonName={"Comment"}
             classModified="false"
             name="commentsubmit"
+            clickHandler={clickHandler}
           />
         </div>
       </div>
