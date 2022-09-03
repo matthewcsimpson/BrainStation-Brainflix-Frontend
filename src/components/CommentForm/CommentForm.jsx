@@ -5,20 +5,41 @@ import "../CommentsList/CommentsList.scss";
 import SiteButton from "../SiteButton/SiteButton";
 import Avatar from "../Avatar/Avatar";
 
+// data
+import api from "../../data/api_data.json";
+
 // libraries
-// import axios from "axios";
+import axios from "axios";
 
 function CommentsForm({ selectedVideo, userImg, addcom }) {
-  const clickHandler = () => {
+  /**
+   * function to handle button clicks.  Mostly here to prevent errors.
+   * @param {event} e
+   */
+  const clickHandler = (e) => {
     console.log("clicked!");
-    console.log(selectedVideo.comments);
   };
 
-  const postComment = (comment) => {};
+  const postComment = (comment) => {
+    axios
+      .post(`${api.newApiBaseUrl}/videos/${selectedVideo.id}/comments`, comment)
+      .then((res) => {
+        console.log(res);
+      });
+  };
 
+  /**
+   * capture incoming comment form data and post.
+   * @param {event} e
+   */
   const commentSubmit = (e) => {
     e.preventDefault();
-    console.log(e.target.new_comment.value);
+    const newComment = {
+      videoid: selectedVideo.id,
+      comment: e.target.new_comment.value,
+      timestamp: Date.now(),
+    };
+    postComment(newComment);
   };
 
   return (
