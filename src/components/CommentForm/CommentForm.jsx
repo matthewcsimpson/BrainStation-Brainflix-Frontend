@@ -11,20 +11,28 @@ import api from "../../data/api_data.json";
 // libraries
 import axios from "axios";
 
-function CommentsForm({ selectedVideo, userImg, addcom }) {
+function CommentsForm({
+  selectedVideo,
+  newLoadSpecificVideoDetails,
+  newLoadRemoteVideoArray,
+  userImg,
+  addcom,
+}) {
   /**
    * function to handle button clicks.  Mostly here to prevent errors.
    * @param {event} e
    */
   const clickHandler = (e) => {
     console.log("clicked!");
+    newLoadRemoteVideoArray();
   };
 
   const postComment = (comment) => {
     axios
       .post(`${api.newApiBaseUrl}/videos/${selectedVideo.id}/comments`, comment)
       .then((res) => {
-        console.log(res);
+        console.log(res.data);
+        newLoadSpecificVideoDetails(selectedVideo.id);
       });
   };
 

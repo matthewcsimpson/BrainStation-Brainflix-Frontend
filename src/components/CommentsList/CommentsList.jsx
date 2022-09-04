@@ -9,11 +9,17 @@ import "./CommentsList.scss";
 import CommentsForm from "../CommentForm/CommentForm";
 import Comment from "../Comment/Comment";
 
-function CommentsList({ selectedVideo }) {
+function CommentsList({
+  selectedVideo,
+  newLoadSpecificVideoDetails,
+  newLoadRemoteVideoArray,
+}) {
   return (
     <div className="comments">
       <CommentsForm
         selectedVideo={selectedVideo}
+        newLoadSpecificVideoDetails={(id) => newLoadSpecificVideoDetails}
+        newLoadRemoteVideoArray={() => newLoadRemoteVideoArray}
         userImg={userImg}
         addcom={addcom}
       />

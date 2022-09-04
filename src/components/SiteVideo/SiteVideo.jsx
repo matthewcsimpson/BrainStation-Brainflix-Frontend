@@ -1,4 +1,4 @@
-function Video({ vid }) {
+function SiteVideo({ vid }) {
   return (
     <div className={`videoslist__video vid-${vid.id}`}>
       <img src={vid.image} className="videoslist__thumbnail" alt={vid.title} />
@@ -10,4 +10,4 @@ function Video({ vid }) {
   );
 }
 
-export default Video;
+export default SiteVideo;

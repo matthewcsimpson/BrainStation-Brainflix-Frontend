@@ -2,7 +2,7 @@
 import "./VideoList.scss";
 
 // Components
-import Video from "../Video/Video";
+import SiteVideo from "../SiteVideo/SiteVideo";
 
 // Libraries
 import { Link } from "react-router-dom";
@@ -17,7 +17,7 @@ function VideoList({ selectedVideoId, videoArray }) {
           .map((video) => {
             return (
               <Link to={`/video/${video.id}`} key={video.id}>
-                <Video key={video.id} vid={video} />
+                <SiteVideo key={video.id} vid={video} />
               </Link>
             );
           })}

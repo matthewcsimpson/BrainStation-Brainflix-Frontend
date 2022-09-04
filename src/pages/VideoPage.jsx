@@ -65,6 +65,7 @@ function VideoPage() {
     if (videoid) {
       newLoadSpecificVideoDetails(videoid);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoid]);
 
   return (
@@ -75,7 +76,13 @@ function VideoPage() {
           <div className="bf__flexwrapper">
             <div className="bf__subwrapper">
               <CurrentVideo videoDetails={selectedVideo} />
-              <CommentsList selectedVideo={selectedVideo} />
+              <CommentsList
+                selectedVideo={selectedVideo}
+                newLoadSpecificVideoDetails={(id) =>
+                  newLoadSpecificVideoDetails
+                }
+                newLoadRemoteVideoArray={() => newLoadRemoteVideoArray}
+              />
             </div>
             <VideoList
               selectedVideoId={selectedVideo.id}
