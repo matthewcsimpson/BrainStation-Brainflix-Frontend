@@ -78,9 +78,7 @@ function VideoPage() {
               <CurrentVideo videoDetails={selectedVideo} />
               <CommentsList
                 selectedVideo={selectedVideo}
-                newLoadSpecificVideoDetails={(id) =>
-                  newLoadSpecificVideoDetails
-                }
+                newLoadSpecificVideoDetails={() => newLoadSpecificVideoDetails}
                 newLoadRemoteVideoArray={() => newLoadRemoteVideoArray}
               />
             </div>
