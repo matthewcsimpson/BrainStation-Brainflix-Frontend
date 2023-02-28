@@ -10,7 +10,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 
 // Data
-import api from "../data/api_data.json";
+const REACT_APP_LOCAL_API = process.env.REACT_APP_LOCAL_API;
 
 function VideoPage() {
   const { videoid } = useParams();
@@ -22,7 +22,7 @@ function VideoPage() {
    */
   const newLoadRemoteVideoArray = () => {
     axios
-      .get(`${api.newApiBaseUrl}/videos`)
+      .get(`${REACT_APP_LOCAL_API}/videos`)
       .then((res) => {
         setVideoArray(res.data);
         if (!videoid) {
@@ -40,7 +40,7 @@ function VideoPage() {
    */
   const newLoadSpecificVideoDetails = (id) => {
     axios
-      .get(`${api.newApiBaseUrl}/videos/${id}`)
+      .get(`${REACT_APP_LOCAL_API}/videos/${id}`)
       .then((res) => {
         setSelectedVideo(res.data);
       })

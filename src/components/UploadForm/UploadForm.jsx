@@ -11,7 +11,9 @@ import axios from "axios";
 // Assets
 import upload from "../../assets/images/Icons/upload.svg";
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
-import api from "../../data/./api_data.json";
+
+
+const REACT_APP_LOCAL_API = process.env.REACT_APP_LOCAL_API;
 
 function UploadForm() {
   const nav = useNavigate();
@@ -36,7 +38,7 @@ function UploadForm() {
     };
 
     axios
-      .post(`${api.newApiBaseUrl}/videos`, newVideo)
+      .post(`${REACT_APP_LOCAL_API}/videos`, newVideo)
       .then((res) => {
         console.log(res.data);
       })

@@ -1,21 +1,22 @@
 //Styles
 import "./Hero.scss";
 
-function Hero(props) {
+// API info
+const REACT_APP_LOCAL_API = process.env.REACT_APP_LOCAL_API;
+
+function Hero({ poster, video }) {
   return (
     <div className="hero">
-      <video className="hero__video" controls poster={props.poster}></video>
+      <video
+        className="hero__video"
+        controls
+        poster={`${REACT_APP_LOCAL_API}/${poster}`}
+        src={`${REACT_APP_LOCAL_API}/${video}`}
+        type="video/mp4"
+      ></video>
     </div>
   );
 }
 
 export default Hero;
 
-/**
- * Note: these lines of code can be added to make the player functional.
- * Leaving them in so I don't have to remember them later.
- */
-
-// import api_key from "../../../data/api_data.json";
-// const videourl = `${video}?api_key=${api_key}`;
-/* <source src={videourl} type="video/mp4" /> */
