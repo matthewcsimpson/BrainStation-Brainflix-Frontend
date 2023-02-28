@@ -48,6 +48,8 @@
         flex-direction: column;
         justify-content: space-around;
 
+        width: 100%;
+
         @include tablet {
             padding: 0 $margin-tablet;
         }
@@ -60,7 +62,12 @@
             padding: $margin-tablet 0;
         }
     }
-
+    
+    &__detailswrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     &__label {
         font-size: $font-mobile-buttonslabels-size;
         font-weight: $font-desktop-buttonslabels-weight;
@@ -132,10 +139,7 @@
         }
     }
 
-    &__detailswrapper {
-        display: flex;
-        justify-content: space-between;
-    }
+
 
     &__avatar-wrapper {
         display: flex;

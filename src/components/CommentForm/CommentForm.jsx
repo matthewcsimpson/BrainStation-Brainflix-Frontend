@@ -5,11 +5,11 @@ import "../CommentsList/CommentsList.scss";
 import SiteButton from "../SiteButton/SiteButton";
 import Avatar from "../Avatar/Avatar";
 
-// data
-import api from "../../data/api_data.json";
-
 // libraries
 import axios from "axios";
+
+// data
+const REACT_APP_LOCAL_API = process.env.REACT_APP_LOCAL_API;
 
 function CommentsForm({
   selectedVideo,
@@ -23,17 +23,20 @@ function CommentsForm({
    * @param {event} e
    */
   const clickHandler = (e) => {
-    console.log("clicked!");
     newLoadRemoteVideoArray();
   };
 
   const postComment = (comment) => {
     axios
-      .post(`${api.newApiBaseUrl}/videos/${selectedVideo.id}/comments`, comment)
+      .post(
+        `${REACT_APP_LOCAL_API}/videos/${selectedVideo.id}/comments`,
+        comment
+      )
       .then((res) => {
         console.log(res.data);
         newLoadSpecificVideoDetails(selectedVideo.id);
-      });
+      })
+      .catch((error) => console.error(error));
   };
 
   /**
