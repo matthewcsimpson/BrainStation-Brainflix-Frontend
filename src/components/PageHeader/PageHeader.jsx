@@ -5,7 +5,7 @@ import "./PageHeader.scss";
 import { useNavigate } from "react-router-dom";
 
 //Components
-import Button from "../SiteButton/SiteButton";
+import SiteButton from "../SiteButton/SiteButton";
 import Avatar from "../Avatar/Avatar";
 
 function PageHeader({ bflogo, userImg, buttonIcon }) {
@@ -32,7 +32,7 @@ function PageHeader({ bflogo, userImg, buttonIcon }) {
           className="header__searchbar"
         ></input>
         <Avatar userImg={userImg} classModifier="header__avatar" />
-        <Button
+        <SiteButton
           buttonName="Upload"
           icon={buttonIcon}
           classModifier="header__button"

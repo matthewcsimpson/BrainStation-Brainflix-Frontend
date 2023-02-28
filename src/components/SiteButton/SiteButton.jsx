@@ -1,11 +1,11 @@
 // Style
 import "./SiteButton.scss";
 
-function SiteButton({ icon, buttonName, classModifier, clickHandler }) {
+function SiteButton({ icon, buttonType, buttonName, classModifier, clickHandler }) {
   return (
     <button
       className={`glbl__button ${classModifier}`}
-      type="submit"
+      type={buttonType}
       onClick={() => clickHandler()}
     >
       <img className="glbl__button__image" src={icon} alt="" />

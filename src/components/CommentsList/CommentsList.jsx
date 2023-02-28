@@ -13,18 +13,20 @@ function CommentsList({
   selectedVideo,
   newLoadSpecificVideoDetails,
   newLoadRemoteVideoArray,
+  commentSubmit
 }) {
 
-  
+
 
   return (
     <div className="comments">
       <CommentsForm
         selectedVideo={selectedVideo}
-        newLoadSpecificVideoDetails={(id) => newLoadSpecificVideoDetails}
+        newLoadSpecificVideoDetails={(id) => newLoadSpecificVideoDetails(id)}
         newLoadRemoteVideoArray={() => newLoadRemoteVideoArray}
         userImg={userImg}
         addcom={addcom}
+        commentSubmit={(e)=>commentSubmit(e)}
       />
       {selectedVideo.comments.map((comment) => {
         return <Comment key={comment.id} comment={comment} />;

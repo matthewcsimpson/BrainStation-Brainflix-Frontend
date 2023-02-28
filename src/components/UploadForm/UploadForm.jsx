@@ -12,14 +12,13 @@ import axios from "axios";
 import upload from "../../assets/images/Icons/upload.svg";
 import thumbnail from "../../assets/images/Upload-video-preview.jpg";
 
-
 const REACT_APP_LOCAL_API = process.env.REACT_APP_LOCAL_API;
 
 function UploadForm() {
   const nav = useNavigate();
 
   const clickHandler = () => {
-    console.log("clicked!");
+    console.info("clicked!");
   };
 
   /**
@@ -29,6 +28,7 @@ function UploadForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!e.target.title.value || !e.target.description.value) {
+      alert("You must fill out all fields!");
       return;
     }
 
@@ -90,16 +90,30 @@ function UploadForm() {
         <div className="uploadform__buttonswrapper">
           <SiteButton
             icon={upload}
+            buttonType={"submit"}
             buttonName="publish"
             classModifier="upload__button__ordering"
             clickHandler={clickHandler}
           />
-          <SiteButton
+
+          <div
+            className="glbl__button cancel__button"
+            onClick={() => {
+              nav("/");
+            }}
+          >
+            <span className="glbl__button__spacer"></span>
+            <span className="glbl__button__text">cancel</span>
+            <span className="glbl__button__spacer"></span>
+          </div>
+
+          {/* <SiteButton
             icon={upload}
+            buttonType={"cancel"}
             buttonName="cancel"
             classModifier="cancel__button"
             clickHandler={clickHandler}
-          />
+          /> */}
         </div>
       </form>
     </div>

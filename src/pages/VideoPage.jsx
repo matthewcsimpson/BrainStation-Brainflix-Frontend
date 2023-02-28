@@ -50,6 +50,40 @@ function VideoPage() {
   };
 
   /**
+   * post the new comment
+   * @param {object} comment
+   */
+  const postComment = async (comment) => {
+    await axios
+      .post(
+        `${REACT_APP_LOCAL_API}/videos/${selectedVideo.id}/comments`,
+        comment
+      )
+      .catch((error) => console.error("Error posting comment", error));
+  };
+
+  /**
+   * capture incoming comment form data and post.
+   * @param {event} e
+   */
+  const commentSubmit = async (e) => {
+    e.preventDefault();
+
+    if (e.target.new_comment.value.length > 0) {
+      const newComment = {
+        videoid: selectedVideo.id,
+        comment: e.target.new_comment.value,
+        timestamp: Date.now(),
+      };
+      await postComment(newComment);
+      e.target.new_comment.value = "";
+      newLoadSpecificVideoDetails(selectedVideo.id);
+    } else {
+      alert("You must comment something!");
+    }
+  };
+
+  /**
    * useEffect to call the loadRemoteVideoList() function;
    */
   useEffect(() => {
@@ -68,7 +102,6 @@ function VideoPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoid]);
 
-
   return (
     <>
       {selectedVideo && (
@@ -81,6 +114,7 @@ function VideoPage() {
                 selectedVideo={selectedVideo}
                 newLoadSpecificVideoDetails={() => newLoadSpecificVideoDetails}
                 newLoadRemoteVideoArray={() => newLoadRemoteVideoArray}
+                commentSubmit={(e) => commentSubmit(e)}
               />
             </div>
             <VideoList
