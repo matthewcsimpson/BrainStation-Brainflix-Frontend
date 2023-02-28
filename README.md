@@ -6,6 +6,8 @@ The front end is created with React.js and uses React Router, Axios, DotEnv, as 
 
 A user can leave comments on the existing videos and simulate uploading a new video.  The site is designed responsively with breakpoints set for mobile, tablet, and desktop viewport sizes. 
 
+The app is currently deployed here <http://brainflix-mcsimpson.herokuapp.com/>
+
 Please be sure to also [check out the back end repository](https://github.com/matthewcsimpson/Brainflix-Backend). 
 
 ![BrainFlix](https://github.com/matthewcsimpson/Brainflix/blob/main/public/brainflix-screenshot.png)
