@@ -30,7 +30,7 @@ function VideoPage() {
         }
       })
       .catch((e) => {
-        console.error(e);
+        console.error("Error getting videos", e);
       });
   };
 
@@ -45,7 +45,7 @@ function VideoPage() {
         setSelectedVideo(res.data);
       })
       .catch((e) => {
-        console.error(e);
+        console.error("Error getting specific video", e);
       });
   };
 
@@ -67,6 +67,7 @@ function VideoPage() {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videoid]);
+
 
   return (
     <>

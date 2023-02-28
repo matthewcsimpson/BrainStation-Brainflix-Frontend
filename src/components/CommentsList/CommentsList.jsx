@@ -14,6 +14,9 @@ function CommentsList({
   newLoadSpecificVideoDetails,
   newLoadRemoteVideoArray,
 }) {
+
+  
+
   return (
     <div className="comments">
       <CommentsForm
