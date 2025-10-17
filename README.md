@@ -1,13 +1,12 @@
-### BrainFlix - Full Stack Video Site
+## BrainFlix - Full Stack Video Site - Front End
 
-Completed during my time as a student at BrainStation, BrainFlix is a full-stack video player app modelled after Vimeo.  
+BrainFlix is a full-stack video player app modelled after Vimeo.  The back end is built with Node and Express. 
 
-The front end is created with React.js and uses React Router, Axios, DotEnv, as well as HTML, Sass/CSS3 with BEM.  The back end is created with Node.js, Express.js, and JSON files. 
-
-A user can leave comments on the existing videos and simulate uploading a new video.  The site is designed responsively with breakpoints set for mobile, tablet, and desktop viewport sizes. 
+Completed as part of my studies at [BrainStation](https://brainstation.io).
 
 The app is currently deployed here <http://brainflix-mcsimpson.herokuapp.com/>
 
-Please be sure to also [check out the back end repository](https://github.com/matthewcsimpson/Brainflix-Backend). 
+_Please be sure to also [check out the back end repository](https://github.com/matthewcsimpson/Brainflix-Backend)_
 
+### Screenshot
 ![BrainFlix](https://github.com/matthewcsimpson/Brainflix/blob/main/public/brainflix-screenshot.png)
